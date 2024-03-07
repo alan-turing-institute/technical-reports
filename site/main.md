@@ -1,9 +1,6 @@
 % The Alan Turing Institute 
   Technical Reports Series
-% The Alan Turing Institute
-% March 2024
-
-## Technical Reports (DRAFT)
+  (DRAFT)
 
 The Turing Technical Reports Series provides a public, citable
 repository of technical reports. It is suitable for publication of
@@ -12,9 +9,6 @@ primarily expository, case studies, position papers, and PhD
 theses. (This list is not exhaustive.) It is not suitable for articles
 that are destined for publication in a journal or conference
 proceedings.
-
-
-## Catalogue
 
 (The reports below are not real.)
 
