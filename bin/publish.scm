@@ -3,8 +3,8 @@
 ;; - generate table of reports from database
 
 ;; Read database file, validate each record, and produce an internal
-;; representation.  The internal representation is a list of
-;; reports where each report is an association list.
+;; representation. The internal representation is a list of
+;; reports, where each report is an association list.
 
 ;; True if (map p xs) is a list of #t
 (define (andmap p xs)
@@ -21,7 +21,7 @@
   (and (list? xs)
        (andmap string? xs)))
 
-;; A list of integer? of length at most 3
+;; A record-date? is a list of integer? of length at most 3
 (define (record-date? xs)
   (and (list? xs)
        (or (null? (cdr xs))
@@ -43,7 +43,8 @@
     (authors . (,(expect list-of-string?) "list of string"))
     (date    . (,(expect record-date?     "date")))))
 
-;; Parse a record from the database and return an association list
+;; Parse a record from the database and return an association list of
+;; fields
 (define (parse-record-fields fs)
   fs
   )
