@@ -6,6 +6,8 @@
 ;; representation. The internal representation is a list of
 ;; reports, where each report is an association list.
 
+(use-modules (ice-9 ports))
+
 ;; True if (map p xs) is a list of #t
 (define (andmap p xs)
   (if (null? xs)
@@ -26,7 +28,7 @@
   (and (list? xs)
        (or (null? (cdr xs))
 	   (null? (cddr xs))
-	   (null? (cdddr xs)) (length))
+	   (null? (cdddr xs)))
        (andmap integer? xs)))
 
 (define (expect pred?)
@@ -41,7 +43,7 @@
   `((number  . (,(expect integer?)        "integer"))
     (title   . (,(expect string?)         "string"))
     (authors . (,(expect list-of-string?) "list of string"))
-    (date    . (,(expect record-date?     "date")))))
+    (date    . (,(expect record-date?)    "date"))))
 
 ;; Parse a record from the database and return an association list of
 ;; fields
@@ -59,3 +61,14 @@
 
 ;; ------------------------------------------------------------
 
+;; TODO: FIX HARDCODING!
+
+(with-input-from-file "test.sexp"
+  (λ ()
+    (let loop ([next-record (read)])
+      (cond
+       [(eof-object? next-record) #t]
+       [else
+	(parse-record next-record)]))))
+
+(display "Done!\n")
