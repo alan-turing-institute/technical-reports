@@ -2,11 +2,42 @@
 ;; - generate html from copy text
 ;; - generate table of reports from database
 
-;; Read database file, validate each record, and produce an internal
-;; representation. The internal representation is a list of
-;; reports, where each report is an association list.
+;; Read standard input into a list of records. Each record is an
+;; association list of (symbol? . any?)
 
-(use-modules (ice-9 ports))
+(use-modules (ice-9 ports)
+	     (ice-9 match)
+	     (srfi srfi-9)) ; records
+
+(define-record-type <report>
+  (make-report number title authors date)
+  report?
+  (number  report-number)
+  (title   report-title)
+  (authors report-authors)
+  (date    report-date))
+
+;; Read datums from standard in
+;; Each datum must be of the form (report ...)
+;; Returns a list of datums
+
+(define (read-reports)
+  (let loop ([next-record (read)]
+	     [reports-so-far '()])
+    (match next-record
+     [(? eof-object?) reports-so-far]
+     [('record fields)
+      (write (parse-record next-record))
+      (display "\n\n")
+      (loop (read))])))
+
+(display "Done!\n")
+
+
+
+
+
+
 
 ;; True if (map p xs) is a list of #t
 (define (andmap p xs)
@@ -45,23 +76,23 @@
 
 ;; expect-field : list? -> pair?
 (define (expect-field fld)
-  (cond
-   [(and ())])
-  )
+  (when (not
+	 (and (pair? fld)
+	      (symbol? (car fld))))
+    (error "Expected a record field" fld))
+
+  (let ([field-name  (car fld)]
+	[field-value (cadr fld)])
+    (let ([expectation (assoc field-name *record-type-fields*)])
+      (unless expectation
+	(raise-exception 'unknown-field-name))
+      (cons field-name ((cadr expectation) field-value)))))
 
 ;; Parse a record from the database and return an association list of
 ;; fields
-(define (parse-field fld acc)
-  )
 
 (define (parse-record-fields fields)
-  (define (parse-field fld acc) 
-    ()
-    
-    )
-  
-
-  )
+  (map expect-field fields))
 
 (define (parse-record r)
   (cond
@@ -69,19 +100,8 @@
 	 (eq? (car r) 'report))
     (parse-record-fields (cdr r))]
    [else
-    (error "Expected a report record.\n" r)]))
+    (error "Expected a report record." r)]))
 
 ;; ------------------------------------------------------------
 
-;; TODO: FIX HARDCODING!
 
-(with-input-from-file "test.sexp"
-  (λ ()
-    (let loop ([next-record (read)])
-      (cond
-       [(eof-object? next-record) #t]
-       [else
-	(display (parse-record next-record))
-	(loop (read))]))))
-
-(display "Done!\n")
