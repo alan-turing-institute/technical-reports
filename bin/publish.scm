@@ -26,29 +26,41 @@
 ;; A record-date? is a list of integer? of length at most 3
 (define (record-date? xs)
   (and (list? xs)
-       (or (null? (cdr xs))
-	   (null? (cddr xs))
-	   (null? (cdddr xs)))
+       (<= (length xs) 3)
        (andmap integer? xs)))
 
-(define (expect pred?)
-  (λ (field)
-    (if (pred? field)
-	field
-	(raise-exception 'invalid-field-type))))
+(define (expect-value pred?)
+  (λ (x)
+    (if (pred? x)
+	x
+	(raise-exception 'invalid-field-value-type))))
 
 ;; ------------------------------------------------------------
 
 (define *record-type-fields*
-  `((number  . (,(expect integer?)        "integer"))
-    (title   . (,(expect string?)         "string"))
-    (authors . (,(expect list-of-string?) "list of string"))
-    (date    . (,(expect record-date?)    "date"))))
+  `((number  . (,(expect-value integer?)        "integer"))
+    (title   . (,(expect-value string?)         "string"))
+    (authors . (,(expect-value list-of-string?) "list of string"))
+    (date    . (,(expect-value record-date?)    "date"))))
+
+;; expect-field : list? -> pair?
+(define (expect-field fld)
+  (cond
+   [(and ())])
+  )
 
 ;; Parse a record from the database and return an association list of
 ;; fields
-(define (parse-record-fields fs)
-  fs
+(define (parse-field fld acc)
+  )
+
+(define (parse-record-fields fields)
+  (define (parse-field fld acc) 
+    ()
+    
+    )
+  
+
   )
 
 (define (parse-record r)
@@ -57,7 +69,7 @@
 	 (eq? (car r) 'report))
     (parse-record-fields (cdr r))]
    [else
-    (error "Expected a new record.\n" r)]))
+    (error "Expected a report record.\n" r)]))
 
 ;; ------------------------------------------------------------
 
@@ -69,6 +81,7 @@
       (cond
        [(eof-object? next-record) #t]
        [else
-	(parse-record next-record)]))))
+	(display (parse-record next-record))
+	(loop (read))]))))
 
 (display "Done!\n")
