@@ -1,13 +1,20 @@
-;; Generate all dynamic parts of the website:
-;; - generate html from copy text
-;; - generate table of reports from database
 
-;; Read standard input into a list of records. Each record is an
-;; association list of (symbol? . any?)
+;; Read standard input into a list of records. Each record is a
+;; <report>.
+
+;; WARNING: Very little error-checking is done! A malformed database
+;; file will likely result in an unhelpful error message.
+
 
 (use-modules (ice-9 ports)
 	     (ice-9 match)
-	     (srfi srfi-9)) ; records
+	     (srfi srfi-1) ; list utilities
+	     (srfi srfi-9) ; records
+	     )
+
+
+
+
 
 (define-record-type <report>
   (make-report number title authors date)
@@ -17,91 +24,54 @@
   (authors report-authors)
   (date    report-date))
 
-;; Read datums from standard in
-;; Each datum must be of the form (report ...)
-;; Returns a list of datums
+;; Read datums from standard input
+;; Each datum must be of the form ('report field ...)
+;; Returns a list of <report>s
 
 (define (read-reports)
   (let loop ([next-record (read)]
 	     [reports-so-far '()])
     (match next-record
-     [(? eof-object?) reports-so-far]
-     [('record fields)
-      (write (parse-record next-record))
-      (display "\n\n")
-      (loop (read))])))
+      [(? eof-object?) reports-so-far]
+      [('report . fields)
+       (loop (read) (cons (report-of fields) reports-so-far))]
+      [else
+       (error "Expected a report." next-record)])))
 
-(display "Done!\n")
-
-
-
-
-
-
-
-;; True if (map p xs) is a list of #t
-(define (andmap p xs)
-  (if (null? xs)
-      #t
-      (let loop ([xs xs])
-	(cond
-	 [(null? (cdr xs)) (p (car xs))]
-	 [else
-	  (let ([rest (cdr xs)])
-	    (and (p (car xs)) (loop rest)))]))))
-
-(define (list-of-string? xs)
-  (and (list? xs)
-       (andmap string? xs)))
-
-;; A record-date? is a list of integer? of length at most 3
-(define (record-date? xs)
-  (and (list? xs)
-       (<= (length xs) 3)
-       (andmap integer? xs)))
-
-(define (expect-value pred?)
-  (λ (x)
-    (if (pred? x)
-	x
-	(raise-exception 'invalid-field-value-type))))
 
 ;; ------------------------------------------------------------
+;; Parsing
 
-(define *record-type-fields*
-  `((number  . (,(expect-value integer?)        "integer"))
-    (title   . (,(expect-value string?)         "string"))
-    (authors . (,(expect-value list-of-string?) "list of string"))
-    (date    . (,(expect-value record-date?)    "date"))))
+(define (report-of fields)
+  (let ([flds (parse-fields fields)])
+    (let ([number  (cadr (assoc 'number flds))]
+	  [title   (cadr (assoc 'title flds))]
+	  [authors (cadr (assoc 'title flds))]
+	  [date    (cadr (assoc 'date  flds))])
+      (make-report number title authors date))))
 
-;; expect-field : list? -> pair?
-(define (expect-field fld)
-  (when (not
-	 (and (pair? fld)
-	      (symbol? (car fld))))
-    (error "Expected a record field" fld))
-
-  (let ([field-name  (car fld)]
-	[field-value (cadr fld)])
-    (let ([expectation (assoc field-name *record-type-fields*)])
-      (unless expectation
-	(raise-exception 'unknown-field-name))
-      (cons field-name ((cadr expectation) field-value)))))
-
-;; Parse a record from the database and return an association list of
-;; fields
-
-(define (parse-record-fields fields)
-  (map expect-field fields))
-
-(define (parse-record r)
-  (cond
-   [(and (list? r)
-	 (eq? (car r) 'report))
-    (parse-record-fields (cdr r))]
-   [else
-    (error "Expected a report record." r)]))
+;; fields : a list of ('field-name val1 ...)
+;; such that each field-name is unique
+(define (parse-fields fields)
+  (fold
+   (λ (f flds)
+     (unless (and (pair? f) (symbol? (car f)))
+       (error "Bad field." f))
+     (let ([name (car f)]
+	   [val (cdr f)])
+       (when (assoc name flds)
+	 (error "Duplicate field." f))
+       (acons name val flds)))
+   '()
+   fields))
 
 ;; ------------------------------------------------------------
+;; Main 
+
+
+(define *reports* (read-reports))
+
+(display *reports*)
+
 
 
