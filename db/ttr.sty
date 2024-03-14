@@ -1,0 +1,106 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ttr}[2024-03-14 Turing Technical Reports]
+%%
+%% Turing Technical Report Series
+%% Layout for title page and front matter
+%%
+% The Turing's formatting guidelines divide the page into 21 equal
+% atomic columns. To format the title page we use a standard "four
+% column" layout, where each column is 4 atomic columns plus 1 gutter
+% atomic column. The document title runs from the left margin across
+% three columns, not including the final gutter, for a total of 5 + 5
+% + 4 = 14 atomic columns.
+%
+\RequirePackage[verbose, a4paper]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage{dejavu}
+%
+\newlength{\turingcolwd}
+\newlength{\turingcolht}
+\setlength{\turingcolwd}{0.04762\paperwidth}
+\setlength{\turingcolht}{0.04762\paperheight}
+%% Assumes A-series paper size
+\geometry{left=\turingcolwd, vmargin=\turingcolht}
+\geometry{textwidth=14\turingcolwd}
+%% Additional meta-data (author, title, and date are already defined)
+\def\@reportnumber{\relax}
+\newcommand{\reportnumber}[1]{\gdef\@reportnumber{#1}}
+\def\@copyrightdate{\relax}
+\newcommand{\copyrightdate}[1]{\gdef\@copyrightdate{#1}}
+\def\@license{This work is licensed under CC~BY-SA~4.0. To view a copy
+  of this license, visit \texttt{\fontsize{7.5}{11}\selectfont http://creativecommons.org/licenses/by-sa/4.0/}}
+\newcommand{\license}[1]{\gdef\@license{#1}}
+%% \def\@protectivemarking{Not protectively marked}
+%% \newcommand{\protectivemarking}[1]{\gdef\@protectivemarking{#1}}
+%% \def\@status{Draft}
+%% \newcommand{\status}[1]{\gdef\@status{#1}}
+%% \def\@recordnumber{\relax}
+%% \newcommand{\recordnumber}[1]{\gdef\@recordnumber{#1}}
+%
+\newcommand\makecoversheet{%
+\begin{titlepage}%
+\raggedright\setlength{\parindent}{0pt}%
+\fontfamily{phv}\fontseries{b}\fontsize{34pt}{34pt}\selectfont
+\begin{tikzpicture}[remember picture,overlay]
+  \node [anchor=north west, xshift=\turingcolwd, yshift=-\turingcolht] at (current page.north west)%
+{\includegraphics[width=7\turingcolwd, trim=6pt 0 0 5pt]{logo.pdf}};
+\end{tikzpicture}
+\vspace*{5\turingcolht} %  rows from the top of the paper
+\vspace*{-\baselineskip}
+
+% The baselineskip should be 40pt at a fonts size of 34pt, but
+% that makes the rule too distant.
+\rule{\textwidth}{4pt}
+
+Turing Technical Report
+
+\vspace{2\turingcolht}
+
+\fontseries{m}\fontsize{21pt}{24pt}\selectfont
+%\@title
+A lightweight system for publication of a technical reports series
+\vspace{1\turingcolht}
+
+\fontseries{m}\fontsize{13pt}{15pt}\selectfont
+\@author
+\smallskip
+
+\@date
+\vfill
+
+\rule{4\turingcolwd}{2pt}
+
+\fontseries{b}\selectfont
+Report number \@reportnumber
+\end{titlepage}
+}
+\newcommand\makefrontmatter{%
+\begin{titlepage}
+\raggedright\setlength{\parindent}{0pt}%
+\vspace*{5\turingcolht}
+
+\begin{minipage}{9\turingcolwd}
+\raggedright\fontfamily{phv}\fontsize{8}{11}\selectfont%
+\fontseries{b}\selectfont%
+\rule{4\turingcolwd}{1pt}
+
+\copyright\ The Alan Turing Institute \@copyrightdate
+\medskip
+
+\fontseries{m}\selectfont
+\@license
+\medskip
+
+The Alan Turing Institute is a charity incorporated and registered in
+England and Wales with company number 09512457 and charity number
+1162533 whose registered office is at British Library, 96 Euston Road,
+London, England, NW1~2DB, United Kingdom.
+
+\end{minipage}
+\end{titlepage}
+}
+
+
+
+
