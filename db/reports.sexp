@@ -2,6 +2,7 @@
 ;;
 ;; (c) The Alan Turing Institute 2024
 ;; This file is openly licensed under CC BY-SA 4.0 
+;; Written by James Geddes <jgeddes@turing.ac.uk>
 
 ;; This file contains the metadata for all technical reports. The
 ;; format is a sequence of s-expressions, each of which describes one report.
