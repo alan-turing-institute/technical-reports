@@ -10,12 +10,13 @@ theses. (This list is not exhaustive.) It is not suitable for articles
 that are destined for publication in a journal or conference
 proceedings.
 
-(The reports below are not real.)
+(The reports below are not real reports.)
 
-| Nº | Title                                                              | Authors      |    Date | Download |
-|---:|--------------------------------------------------------------------|--------------|--------:|----------|
-|  0 | A lightweight system for publication of a technical reports series | James Geddes | 2024-03 |          |
-
+| Nº | Title                                                                                  | Authors      |    Date | Download |
+|---:|----------------------------------------------------------------------------------------|--------------|--------:|----------|
+|  0 | A lightweight system for publication of a technical reports series                     | James Geddes | 2024-03 |          |
+|  1 | The endochronic properties of resublimated thiotimoline                                | Isaac Asimov |    1948 |          |
+|  2 | Transgressing the boundaries: towards a transformative hermeneutics of quantum gravity | Alan Sokal   |    1996 |          |
 
 ## Submission instructions
 
