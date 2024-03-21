@@ -1,9 +1,10 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 \usepackage{ttr}
 %\usepackage[fullpage, patternsize=1cm]{gridpapers}
 %%
 \input{cover-metadata.tex}
 \begin{document}
+\sffamily
 %%
 %% Page 1 ============================================================
 %% 
@@ -19,30 +20,31 @@
 \vspace*{5\turingcolht} 
 \vspace*{-\baselineskip}
 %%
-% The baselineskip should be 40pt at a fonts size of 34pt, but
-% that makes the rule too distant.
-\fontfamily{phv}\fontseries{b}\fontsize{34pt}{34pt}\selectfont
-\rule{\textwidth}{4pt}
+\Large\bfseries
 
-Turing Technical Report
+%% The depth of the bar on the T in 34pt regular Helvetica
+%% is 2.8pt, which I'm going to call 0.15ex
+\newlength{\reportnamewidth}%
+\settowidth{\reportnamewidth}{\mbox{Turing Technical Report}}%
+{\offinterlineskip\rule{\reportnamewidth}{0.45ex}\\[0.5ex]
+Turing Technical Report\par}
 
 \vspace{2\turingcolht}
 
-\fontseries{m}\fontsize{21pt}{24pt}\selectfont
-\reportTitle\relax
+\mdseries\large
+\reportTitle\relax  
 \vspace{1\turingcolht}
 
-\fontseries{m}\fontsize{13pt}{15pt}\selectfont
-\reportAuthors\relax
+\mdseries\normalsize
+\reportAuthors\relax  
 \smallskip
 
 \reportPublicationDate\relax
 \vfill
 
-\rule{4\turingcolwd}{2pt}
-
-\fontseries{b}\selectfont
-Report number \reportNumber\relax
+\mdseries
+{\offinterlineskip\rule{4\turingcolwd}{0.15ex}\\[0.5ex]
+Report number \reportNumber\par}
 \end{titlepage}
 %%
 %% Page 2 ============================================================
@@ -52,14 +54,10 @@ Report number \reportNumber\relax
 \vspace*{5\turingcolht}
 
 \begin{minipage}{9\turingcolwd}
-\raggedright\fontfamily{phv}\fontsize{8}{11}\selectfont%
-\fontseries{b}\selectfont%
-\rule{4\turingcolwd}{1pt}
-
-\copyright\ The Alan Turing Institute \reportCopyrightDate\relax
-\medskip
-
-\fontseries{m}\selectfont
+\small\raggedright
+{\offinterlineskip\rule{9\turingcolwd}{0.15ex}\\[0.5ex]
+\copyright\ The Alan Turing Institute \reportCopyrightDate\par}
+\medskip 
 
 This work is licensed under Creative Commons licence
 CC~BY-SA~4.0. To view a copy of this licence, visit
