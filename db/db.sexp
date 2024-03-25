@@ -8,6 +8,11 @@
 ;; format is a sequence of s-expressions, each of which describes one report.
 ;; It was inspired by the Cambridge Laboratory Technical Reports database.
 
+;; TODO
+;; - adapt reports.rkt to cope with optional fields
+;; - add abstracts
+;; - add copyright date as an optional field
+
 (report
  (number  1)
  (title   "Machine translation quality estimation literature review")

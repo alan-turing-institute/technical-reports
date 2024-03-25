@@ -18,18 +18,20 @@
 
 (provide
  (contract-out
-  [read-reports (-> (listof report?))]))
+  [read-reports (-> (hash/c exact-nonnegative-integer? report?))]))
 
 (struct report (number title authors date) #:transparent)
 
 ;; Read datums from standard input
 ;; Each datum must be an s-expression of the form
 ;; ('report ...)
-;; report : -> [List-of report?)
+;; report : -> [Hash-of report-number report?]
 (define (read-reports)
-  (for/list ([record (in-port read)])
+  (for/hash ([record (in-port read)])
     (match record
-      [(list 'report flds ... ) (parse-record flds)]
+      [(list 'report flds ... )
+       (let ([rprt (parse-record flds)])
+         (values (report-number rprt) rprt))]
       [_
        (raise-user-error "Expected a record." record)])))
 
