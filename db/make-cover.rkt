@@ -7,32 +7,33 @@
 (require (only-in racket/string string-join)
          racket/match
          racket/cmdline
+         racket/date
          "reports.rkt")
-
-
 
 (module+ main
   (define report-number
     (command-line #:args (report-number) (string->number report-number)))
   (make-latex-from-report report-number))
 
-
 ;; ------------------------------------------------------------
 
 (define (make-latex-from-report n)
   ;; read-reports reads from standard in by default
+  (date-display-format 'iso-8601)
   (define *report* (hash-ref (read-reports) n))
   
   (printf #<<EOS
-% This file is a template
-% The contents are automatically generated for a specific report
+% The contents of this file were automatically generated 
 % from the data in the reports database
+% Creation date: ~a
 \newcommand{\reportNumber}{~a}
 \newcommand{\reportTitle}{~a}
 \newcommand{\reportAuthors}{~a}
 \newcommand{\reportPublicationDate}{~a}
 \newcommand{\reportCopyrightDate}{~a}
+\input{cover.tex}
 EOS
+          (date->string (current-date) #t)
           (report-number  *report*)
           (report-title   *report*)
           (format-authors (report-authors *report*))

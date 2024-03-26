@@ -1,8 +1,22 @@
+%% (c) 2024 The Alan Turing Institute
+%% Written by James Geddes
+%%
+%% Produce a Technical Reports cover sheet.
+%% This file should be \input by a driver file which
+%% first defines (by \newcommand) the required metadata.
+%% 
+%% These are:
+%%
+%% \reportNumber
+%% \reportTitle
+%% \reportAuthors
+%% \reportPublicationDate
+%% \reportCopyrightDate
+%%
 \documentclass[a4paper]{article}
 \usepackage{ttr}
 %\usepackage[fullpage, patternsize=1cm]{gridpapers}
 %%
-\input{cover-metadata.tex}
 \begin{document}
 \sffamily
 %%
@@ -24,7 +38,7 @@
 
 %% The depth of the bar on the T in 34pt regular Helvetica
 %% is 2.8pt, which I'm going to call 0.15ex
-\newlength{\reportnamewidth}%
+%\newlength{\reportnamewidth}%
 %\settowidth{\reportnamewidth}{\mbox{Turing Technical Report}}%
 {\offinterlineskip\rule{14\turingcolwd}{0.45ex}\\[0.5ex]
 Turing Technical Report\par}
@@ -37,7 +51,7 @@ Turing Technical Report\par}
 
 \mdseries\normalsize
 \reportAuthors\relax  
-\smallskip
+\medskip
 
 \reportPublicationDate\relax
 \vfill
