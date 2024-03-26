@@ -1,9 +1,11 @@
-## Usage: make report number=n
+## Usage:
+##   make cover number=n
 
-report: $(number).pdf
+cover: $(number).pdf
 
-$(number).pdf: db.sexp make-report.rkt cover-metadata.tex
+$(number).pdf: db.sexp make-cover.rkt cover.tex cover-metadata.tex
 
 cover-metadata.tex:
-	make-report $(number) < db.sexp > $@
-
+	./make-cover.rkt $(number) < db.sexp > $@
+	pdflatex -pdf cover.tex
+	mv cover.pdf $(number).pdf
