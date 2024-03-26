@@ -57,8 +57,8 @@ EOS
   (vector-ref *months* (- mn 1)))
 
 (define *months* #("January" "February" "March"
-                   "April" "May" "June"
-                   "July" "August" "September"
+                   "April"   "May"      "June"
+                   "July"    "August"   "September"
                    "October" "November" "December"))
 
 

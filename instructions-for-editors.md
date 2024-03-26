@@ -12,7 +12,8 @@ process.
 
 1. Add the metadata to the reports database
 
-2. Run the script in `db/` (see the README there for instructions).
+2. In `db/` run `make cover number=NNN`(see the README there for
+   instructions).
 
 ## To publish a new report
 
