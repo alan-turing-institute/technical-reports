@@ -2,7 +2,7 @@
 #lang racket/base
 
 ;; Read the reports database (from standard input) and emit a LaTeX
-;; file (on standard output) with the required metadata
+;; driver file (on standard output) with the required metadata
 
 (require (only-in racket/string string-join)
          racket/match
