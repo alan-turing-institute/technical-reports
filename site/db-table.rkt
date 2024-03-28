@@ -18,15 +18,20 @@
   (html:table
    (html:thead
     (html:tr
-     (map html:th '("Nº" "Title" "Authors" "Date" "Download"))))
+     (html:th 'class: "right" "Nº")
+     (html:th 'class: "left"  "Title")
+     (html:th 'class: "left"  "Authors")
+     (html:th 'class: "right" "Date")
+     (html:th 'class: "left"  "Download")
+     ))
    (html:tbody
     (for/list ([i (in-list (reverse (hash-keys the-reports)))])
       (let ([rprt (hash-ref the-reports i)])
         (html:tr
-         (html:td (format "~a" i))
-         (html:td (format "~a" (report-title rprt)))
-         (html:td (string-join (report-authors rprt) ", "))
-         (html:td (format-report-date (report-date rprt)))
+         (html:td 'class: "right" (format "~a" i))
+         (html:td                 (format "~a" (report-title rprt)))
+         (html:td                 (string-join (report-authors rprt) ", "))
+         (html:td 'class: "right" (format-report-date (report-date rprt)))
          (html:td "")))))))
 
 (define (format-report-date dt)

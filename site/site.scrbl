@@ -7,11 +7,15 @@
 
  @head{
   @title{Turing Technical Reports Series}
+  @meta[name: "viewport" content: "width=device-width, initial-scale=1.0"]
+  @style[@include["site.css"]]
  }
 
  @body{
   @header{
-   @h1{The Alan Turing Institute Technical Reports Series (DRAFT)}
+   The Alan Turing Institute Technical Reports Series (DRAFT)
+
+   @p{This microsite is not official and will be replaced.}
   }
 
   @main{
@@ -42,7 +46,7 @@
    @ul{
     @li{
 	
-     @p{Technical Reports are intended to be of interest to some part
+     @p{Technical reports are intended to be of interest to some part
       of the AI or data science community (although it is fine if that
       part consists predominantly of the Turing Institute itself).}
 
