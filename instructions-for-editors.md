@@ -1,12 +1,20 @@
-% Instructions for editors
+% Instructions for editors: Template
 % James Geddes
 % March 2024
 
-## Introduction
+## Overall process
 
-The current process is very manual. Once we have more than a handful
-of reports, I intend to write some scripts to automate much of the
-process.
+- [ ] Add one to the highest-numbered technical report so far to
+	  obtain the new report number, `NNN`.
+   
+- [ ] Save the submitted report in OneDrive, under `as-received/NNN`.
+
+      If any edits are to be made, make these in
+      `in-progress/NNN`. The final version -- with cover sheet --
+      should be saved in `as-published/NNN`.
+   
+- [ ] Generate a new cover sheet (see below). 
+
 
 ## To generate a new cover sheet
 
@@ -14,6 +22,8 @@ process.
 
 2. In `db/` run `make cover number=NNN`(see the README there for
    instructions).
+
+3. 
 
 ## To publish a new report
 
