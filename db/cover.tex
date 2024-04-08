@@ -42,7 +42,7 @@
 %\newlength{\reportnamewidth}%
 %\settowidth{\reportnamewidth}{\mbox{Turing Technical Report}}%
 {\offinterlineskip\rule{14\turingcolwd}{0.45ex}\\[0.5ex]
-  \textls[-15]{Turing Technical Report}\par}
+  \textls[-20]{Turing Technical Report}\par}
 
 \vspace{2\turingcolht}
 
@@ -69,7 +69,7 @@ Report number \reportNumber\par}
 \vspace*{5\turingcolht}
 
 \begin{minipage}{9\turingcolwd}
-\small\raggedright
+\small\raggedright%
 {\offinterlineskip\rule{9\turingcolwd}{0.15ex}\\[0.5ex]
 \copyright\ The Alan Turing Institute \reportCopyrightDate\par}
 \medskip 
@@ -84,6 +84,9 @@ The Alan Turing Institute is a charity incorporated and registered in
 England and Wales with company number 09512457 and charity number
 1162533 whose registered office is at British Library, 96 Euston Road,
 London, England, NW1~2DB, United Kingdom.
+\medskip
+
+\texttt{https://doi.org/\reportDOI}
 \end{minipage}
 \end{titlepage}
 \end{document}
