@@ -32,6 +32,7 @@
 \newcommand{\reportAuthors}{~a}
 \newcommand{\reportPublicationDate}{~a}
 \newcommand{\reportCopyrightDate}{~a}
+\newcommand{\reportDOI}{~a}
 \input{cover.tex}
 EOS
           (date->string (current-date) #t)
@@ -39,7 +40,8 @@ EOS
           (report-title   report)
           (format-authors (report-author-names report))
           (format-date    (report-date report))
-          (format-date    `(,(car (report-date report))))))
+          (format-date    `(,(car (report-date report))))
+          (report-doi     report)))
 
 (define (format-authors authors)
   (let ([n (length authors)])
