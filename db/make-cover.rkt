@@ -7,20 +7,21 @@
 (require (only-in racket/string string-join)
          racket/match
          racket/cmdline
-         racket/date
-         "reports.rkt")
+         racket/date)
+
+;; Load the reports database
+(require "db.rkt")
 
 (module+ main
   (define report-number
     (command-line #:args (report-number) (string->number report-number)))
-  (make-latex-from-report report-number))
+  (make-latex-from-report (hash-ref the-reports report-number)))
 
 ;; ------------------------------------------------------------
 
-(define (make-latex-from-report n)
+(define (make-latex-from-report report)
   ;; read-reports reads from standard in by default
   (date-display-format 'iso-8601)
-  (define *report* (hash-ref (read-reports) n))
   
   (printf #<<EOS
 % The contents of this file were automatically generated 
@@ -34,11 +35,11 @@
 \input{cover.tex}
 EOS
           (date->string (current-date) #t)
-          (report-number  *report*)
-          (report-title   *report*)
-          (format-authors (report-authors *report*))
-          (format-date    (report-date *report*))
-          (format-date    `(,(car (report-date *report*))))))
+          (report-number  report)
+          (report-title   report)
+          (format-authors (report-author-names report))
+          (format-date    (report-date report))
+          (format-date    `(,(car (report-date report))))))
 
 (define (format-authors authors)
   (let ([n (length authors)])

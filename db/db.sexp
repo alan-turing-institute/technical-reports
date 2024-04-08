@@ -11,15 +11,25 @@
 ;; Format
 ;; ------
 ;;
+;; Each report is a list of the form
+;; (report
+;;   (<field-name> <field-value>)
+;;   ... )
+;;
+;; Note that each field is list of two elements (not a pair!)
+;; The <field-value> may be an atomic value or a list, depending on the field.
+;;
+;; The possible <field-names> are:
+;;
 ;; number: a natural number
 ;; title: a string
 ;; authors: a list of authors, where an author is either a string (the
 ;;          name) or a list of a string followed by identifiers.
 ;; date: a list of up to three numbers, being the year, month, and day
 ;; keywords: a list of strings
+;; doi: a string
 
 ;; TODO
-;; - adapt reports.rkt to cope with optional fields
 ;; - add abstracts
 ;; - add copyright date as an optional field
 
