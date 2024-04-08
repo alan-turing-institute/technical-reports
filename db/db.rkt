@@ -13,29 +13,38 @@
 ;; The database of reports
 (provide
  (contract-out
-  (db      (hash/c exact-nonnegative-integer? report?))))
+  (the-reports (hash/c exact-nonnegative-integer? report/c))))
 
 ;; Utilities
 (provide
  (contract-out
-  (report? (-> any boolean?))
-))
+  [report-number       (-> report/c exact-nonnegative-integer?)]
+  [report-title        (-> report/c string?)]
+  [report-author-names (-> report/c (listof string?))]
+  [report-date         (-> report/c (listof exact-nonnegative-integer?))]
+  [report-doi          (-> report/c string?)]
+  [report-keywords     (-> report/c (listof string?))]))
 
+;; ------------------------------------------------------------
 
-(define report? (hash/c symbol? any/c))
+(define report/c (hash/c symbol? any/c))
 
 (define (get-report-field fld)
   (λ (rprt)
     (hash-ref rprt fld)))
 
-(define report-number (get-report-field 'number))
-(define report-title (get-report-field 'title))
-(define report-authors (get-report-field 'authors))
-(define report-author-names #f)
-(define report-date #f)
-(define report-date-printable #f)
-(define report-doi (get-report-field 'doi))
-(define report-keywords (get-report-field 'keywords))
+(define report-number       (get-report-field 'number))
+(define report-title        (get-report-field 'title))
+(define report-date         (get-report-field 'date))
+(define report-doi          (get-report-field 'doi))
+(define report-keywords     (get-report-field 'keywords))
+
+(define (report-author-names rprt)
+  (define authors ((get-report-field 'authors) rprt))
+  (for/list ([author (in-list authors)])
+    (cond
+      [(string? author) author]
+      [(pair? author)   (car author)])))
 
 ;; Read datums from standard input
 ;; Each datum must be an s-expression of the form
@@ -54,16 +63,13 @@
 ;; Marshall a set of fields into a record
 ;; Fields may be given in any order
 ;; A field is ('field-name val ...)
-(define/contract (parse-record flds)
-  (-> any/c report?) 
-  (match flds
-    [(list-no-order
-      (list 'number  (? exact-nonnegative-integer? n))
-      (list 'title   (? string? t))
-      (list 'authors (list (? string? as) ...))
-      (list 'date    (list (? exact-nonnegative-integer? d) ...)))
-     (report n t as d)]
-    [_
-     (raise-user-error "Invalid record found." flds)]))
+(define (parse-record flds)
+  (for/hash ([fld flds])
+    ;; Each field is a list of precisely two elements
+    (values (car fld) (cadr fld))))
 
 
+;; ------------------------------------------------------------
+;; Read in the reports
+
+(define the-reports (with-input-from-file "db.sexp" read-reports))
