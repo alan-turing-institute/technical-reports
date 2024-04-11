@@ -48,8 +48,9 @@
 	    "explainable machine learning"))
  (doi       "10.5281/zenodo.10931558"))
 
-(report
- (number  2)
- (title   "Autonomous cyber defence: Beyond games?")
- (authors ("Chris Hicks" "Vasilios Mavroudis"))
- (date    (2024 04)))
+;; (report
+;;  (number  2)
+;;  (title   "Autonomous cyber defence: Beyond games?")
+;;  (authors ("Chris Hicks" "Vasilios Mavroudis"))
+;;  (date    (2024 04))
+

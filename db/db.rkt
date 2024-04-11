@@ -1,7 +1,8 @@
 #lang racket/base
 
 (require racket/contract
-         racket/match)
+         racket/match
+         racket/runtime-path)
 
 ;; Provides the reports database and some utilities 
 ;; Assumes that the reports database is a file
@@ -26,6 +27,8 @@
   [report-keywords     (-> report/c (listof string?))]))
 
 ;; ------------------------------------------------------------
+
+(define-runtime-path the-database "db.sexp")
 
 (define report/c (hash/c symbol? any/c))
 
@@ -72,4 +75,4 @@
 ;; ------------------------------------------------------------
 ;; Read in the reports
 
-(define the-reports (with-input-from-file "db.sexp" read-reports))
+(define the-reports (with-input-from-file the-database read-reports))
