@@ -1,8 +1,8 @@
 
 site: index.html
 
-index.html: main.md tr-template.html tr-style.css
-	pandoc -o index.html --template=tr-template.html --css=pico.classless.slate.css --css=tr-style.css main.md
+index.html: site.scrbl site.css db-table.rkt
+	racket site.scrbl > index.html
 
 install:
-	install index.html pico.classless.slate.css tr-style.css ../docs
+	install index.html ../docs
