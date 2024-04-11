@@ -1,0 +1,55 @@
+#+title: Instructions for Editors
+
+* Receipt checks [0/4]
+
+  - [ ] Report is readable and printable.
+  - [ ] Okay to publish.
+  - [ ] Keywords.
+  - [ ] Author ORCID iDs.
+    
+* On submission [0/3]
+
+  - [ ] Add one to the highest-numbered technical report so far to
+    obtain the new report number, ~NNN~.
+   
+  - [ ] Save the submitted report in OneDrive, under
+    ~NNN/as-received~. (If there's some work to be done to ensure that
+    this submissision will be a report, save under the date of receipt
+    ~YYYY-MM-DD/as-received~ until the report number is assigned.)
+
+  - [ ] Make any edits in ~NNN/in-progress~. The final version -- with
+    cover sheet -- should be saved in ~NNN/as-published~.
+
+* Pre-publication [0/5]
+
+  - [ ] Make a new repo branch for this report
+
+  - [ ] Obtain a new DOI.
+
+  - [ ] Generate a new cover sheet [0/4]. 
+    - [ ] Add the metadata to the reports database, ~db/db.sexp~.
+    - [ ] In ~db~ run ~make cover number=NNN~ (see the README there
+      for instructions).
+    - [ ] Save the cover sheet, for reference, in ~coversheets/NNN.pdf~.
+    - [ ] Add the cover sheet to the final document version. Use
+          #+begin_src sh
+	    gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=smith-2024.pdf NNN.pdf inputname.pdf      
+          #+end_src
+
+  - [ ] Upload the complete document to the research archive.
+
+  - [ ] Commit changes, merge into ~main~, and tag this commit with
+    ~NNN~. 
+  
+* Publication [0/3]
+
+  - [ ] Change to the branch ~github-pages-publish~ and merge changes
+    from ~main~.
+
+  - [ ] In ~site/~ run ~make site~, which will generate an
+    ~index.html~ from ~site.scrbl~. Check it looks okay.
+
+  - [ ] Run ~make install~ (which moves the ~index.html~ to ~docs/~)
+    and then commit and push this branch (which published the site to
+    GitHub Pages).
+    
