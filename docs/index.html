@@ -1,116 +1,172 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>The Alan Turing Institute Technical Reports Series (DRAFT)</title>
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
-  <link rel="stylesheet" href="pico.classless.slate.css" />
-  <link rel="stylesheet" href="tr-style.css" />
-</head>
-<body>
-<header id="title-block-header">
-<h1 class="title">The Alan Turing Institute Technical Reports Series
-(DRAFT)</h1>
-</header>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Turing Technical Reports Series</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: medium;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+}
+
+main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header::first-line {
+    font-weight: normal;
+    font-size: 1.625rem; /* h2 */
+}
+
+header {
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: sticky;
+    top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    ::
+}
+
+p {
+    max-width: 50em;
+}
+
+/* Turing font sizes are 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
+   Starting with &quot;medium&quot; as 13, the ratios of the surrounding
+   ones are:
+   ..., 0.385, 0.615, 1, 1.615, 2.615, 4.231, ...
+   Starting with &quot;medium&quot; as 8, the ratios are:
+   ..., 0.375, 0.625, 1, 1.625, 2.625, 4.25, ...
+*/
+
+h1 {
+    font-size: 2.625rem;
+}
+
+h2 {
+    /* Bold, slightly larger, and with a horizontal rule just above, the
+       same width as the text */
+    display: inline-block; /* To make the width the same as the content */
+    padding-top: 0.6rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    border-top-style: solid;
+    border-top-width: 0.45ex;
+    font-size: 1.625rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+table {
+    border-collapse: collapse; /* Otherwise the borders on tr don't show? */
+    margin-top: 2rem;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+thead {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+tr {
+    height: 3rem;
+}
+
+td, th {
+    padding-left: 0.5em;
+}
+
+td:nth-child(1), th:nth-child(1) {
+    padding-left: 0;
+}
+
+td.left, th.left {
+    text-align: left;
+}
+
+td.right, th.right {
+    text-align: right;
+}
+
+
+</style></head>
+
+<body><header>The Alan Turing Institute Technical Reports Series (DRAFT)
+
+<p>This microsite is not official and will be replaced.</p></header>
+
 <main>
-<p>The Turing Technical Reports Series provides a public, citable
+<h2>Table of Reports</h2>
+
+<p>The Turing Technical Reports Series is a public, citable
 repository of technical reports. It is suitable for publication of
 long-form reports, project reports to funders, material that is
-primarily expository, case studies, position papers, and PhD theses.
-(This list is not exhaustive.) It is not suitable for articles that are
-destined for publication in a journal or conference proceedings.</p>
-<p>(The reports below are not real reports.)</p>
-<table>
-<colgroup>
-<col style="width: 3%" />
-<col style="width: 70%" />
-<col style="width: 11%" />
-<col style="width: 7%" />
-<col style="width: 8%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;">Nº</th>
-<th>Title</th>
-<th>Authors</th>
-<th style="text-align: right;">Date</th>
-<th>Download</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">0</td>
-<td>A lightweight system for publication of a technical reports
-series</td>
-<td>James Geddes</td>
-<td style="text-align: right;">2024-03</td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">1</td>
-<td>The endochronic properties of resublimated thiotimoline</td>
-<td>Isaac Asimov</td>
-<td style="text-align: right;">1948</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">2</td>
-<td>Transgressing the boundaries: towards a transformative hermeneutics
-of quantum gravity</td>
-<td>Alan Sokal</td>
-<td style="text-align: right;">1996</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="submission-instructions">Submission instructions</h2>
-<p>Please email <a href="mailto:tech-reports@turing.ac.uk"
-class="email">tech-reports@turing.ac.uk</a> from your Turing email
-account attaching a copy of the report you wish to publish (which need
-not be final). We will ask you to provide a title, abstract, and author
-list, and possibly other metadata. These should use only Unicode
-text.</p>
+primarily expository, case studies, position papers, and PhD
+theses.  (This list is not exhaustive.) It is not suitable for
+articles that are destined for publication in a journal or
+conference proceedings.</p>
+
+<table><thead><tr><th class="right">Nº</th><th class="left">Title</th><th class="left">Authors</th><th class="right">Date</th></tr></thead><tbody><tr><td class="right">1</td><td><a href="https://doi.org/10.5281/zenodo.10931558">Machine translation quality estimation literature review</a></td><td>Joanna Knight, Radka Jersakova, James Bishop</td><td class="right">2024-04</td></tr></tbody></table>
+
+<h2>Submission instructions</h2>
+
+<p>Please email <a href="mailto:tech-reports@turing.ac.uk">tech-reports@turing.ac.uk</a>
+from your Turing email account attaching a copy of the report you
+wish to publish (which need not be final). We will ask you to
+provide a title, abstract, and author list, and possibly other
+metadata. These should use only Unicode text.</p>
+
 <p>The editorial process is lightweight but not non-existent:</p>
-<ul>
-<li><p>Technical Reports are intended to be of interest to some part of
-the AI or data science community (although it is fine if that part
-consists predominantly of the Turing Institute itself).</p>
-<p>We expect that most reports produced by members of the Turing will be
-suitable but the series is not intended as an archive of <em>all</em>
-material generated in the course of our work. If there is any debate as
-to the suitability of a particular report for inclusion in this series,
-the views of the Chief Scientist and the relevant Science and Innovation
-Director will be sought.</p></li>
-<li><p>Technical Reports should be of “publication quality,” written in
-a professional tone and prepared carefully, with attention to such
-details as references, spelling, formatting, and general accuracy. For
-example principles for scholarly work, see the general submission
-instructions from arXiv.</p></li>
-<li><p>The final report should be a pdf, formatted for A4 paper. Page
-numbering should start on page 3, as a standard cover sheet will be
-added.</p></li>
-</ul>
-<p>We expect that these instructions will change over time. Please let
-the editors know if the current process could be improved or is not
-working for you.</p>
-</main>
-</body>
-</html>
+
+<ul><li>
+<p>Technical reports are intended to be of interest to some part
+of the AI or data science community (although it is fine if that
+part consists predominantly of the Turing Institute itself).</p>
+
+<p>We expect that most reports produced by members of the Turing
+will be suitable but the series is not intended as an archive of
+<em>all</em> material generated in the course of our work. If there
+is any debate as to the suitability of a particular report for
+inclusion in this series, the views of the Chief Scientist and
+the relevant Science and Innovation Director will be sought.</p>
+</li>
+ <li>
+<p>Technical Reports should be of “publication quality,” written
+in a professional tone and prepared carefully, with attention to
+such details as references, spelling, formatting, and general
+accuracy. For example principles for scholarly work, see the
+general submission instructions from arXiv.</p></li>
+
+<li>
+<p>The final report should be a pdf, formatted for A4 paper. Page
+numbering should start on page 3, as a standard cover sheet will
+be added.</p></li></ul>
+
+<p>We expect that these instructions will change over time. Please
+let the editors know if the current process could be improved or is
+not working for you.</p>
+
+</main></body></html>
+
+
+
+
