@@ -1,0 +1,30 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ttr}[2024-03-14 Turing Technical Reports]
+%%
+%% Turing Technical Report Series
+%% Layout for title page and front matter
+%%
+% The Turing's formatting guidelines divide the page into 21 equal
+% atomic columns. To format the title page we use a standard "four
+% column" layout, where each column is 4 atomic columns plus 1 gutter
+% atomic column. The document title runs from the left margin across
+% three columns, not including the final gutter, for a total of 5 + 5
+% + 4 = 14 atomic columns.
+%
+\RequirePackage[verbose, a4paper]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage{dejavu} % Support for the DejaVu fonts (used for URLs)
+%%
+\newlength{\turingcolwd} % 1/21 of the paper width
+\newlength{\turingcolht} % 1/21 of the paper height
+\setlength{\turingcolwd}{0.04762\paperwidth}
+\setlength{\turingcolht}{0.04762\paperheight}
+%%
+%% Assumes A-series paper size
+\geometry{left=\turingcolwd, vmargin=\turingcolht}
+\geometry{textwidth=14\turingcolwd}
+%%
+
+
+

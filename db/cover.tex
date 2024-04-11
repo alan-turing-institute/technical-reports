@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage{ttr}
+%\usepackage[fullpage, patternsize=1cm]{gridpapers}
+%%
+\input{cover-metadata.tex}
+\begin{document}
+%%
+%% Page 1 ============================================================
+%% 
+\begin{titlepage}
+\raggedright\setlength{\parindent}{0pt}
+%%
+%% The Alan Turing Institute Logotype
+\begin{tikzpicture}[remember picture,overlay]
+  \node [anchor=north west, xshift=\turingcolwd, yshift=-\turingcolht] at (current page.north west)%
+{\includegraphics[width=7\turingcolwd, trim=6pt 0 0 5pt]{logo.pdf}};
+\end{tikzpicture}
+%%
+\vspace*{5\turingcolht} 
+\vspace*{-\baselineskip}
+%%
+% The baselineskip should be 40pt at a fonts size of 34pt, but
+% that makes the rule too distant.
+\fontfamily{phv}\fontseries{b}\fontsize{34pt}{34pt}\selectfont
+\rule{\textwidth}{4pt}
+
+Turing Technical Report
+
+\vspace{2\turingcolht}
+
+\fontseries{m}\fontsize{21pt}{24pt}\selectfont
+\reportTitle\relax
+\vspace{1\turingcolht}
+
+\fontseries{m}\fontsize{13pt}{15pt}\selectfont
+\reportAuthors\relax
+\smallskip
+
+\reportPublicationDate\relax
+\vfill
+
+\rule{4\turingcolwd}{2pt}
+
+\fontseries{b}\selectfont
+Report number \reportNumber\relax
+\end{titlepage}
+%%
+%% Page 2 ============================================================
+%%
+\begin{titlepage}
+\raggedright\setlength{\parindent}{0pt}%
+\vspace*{5\turingcolht}
+
+\begin{minipage}{9\turingcolwd}
+\raggedright\fontfamily{phv}\fontsize{8}{11}\selectfont%
+\fontseries{b}\selectfont%
+\rule{4\turingcolwd}{1pt}
+
+\copyright\ The Alan Turing Institute \reportCopyrightDate\relax
+\medskip
+
+\fontseries{m}\selectfont
+
+This work is licensed under Creative Commons licence
+CC~BY-SA~4.0. To view a copy of this licence, visit
+\fontsize{7.5}{11}\selectfont
+\texttt{http://creativecommons.org/licenses/by-sa/4.0/}
+\medskip
+
+The Alan Turing Institute is a charity incorporated and registered in
+England and Wales with company number 09512457 and charity number
+1162533 whose registered office is at British Library, 96 Euston Road,
+London, England, NW1~2DB, United Kingdom.
+\end{minipage}
+\end{titlepage}
+\end{document}
