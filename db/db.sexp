@@ -48,9 +48,14 @@
 	    "explainable machine learning"))
  (doi       "10.5281/zenodo.10931558"))
 
-;; (report
-;;  (number  2)
-;;  (title   "Autonomous cyber defence: Beyond games?")
-;;  (authors ("Chris Hicks" "Vasilios Mavroudis"))
-;;  (date    (2024 04))
-
+(report
+ (number   2)
+ (title    "Autonomous cyber defence: Beyond games?")
+ (authors  (("Chris Hicks" (orcid "https://orcid.org/0000-0002-6340-004X"))
+	    ("Vasilios Mavroudis" (orcid "https://orcid.org/0000-0003-2667-5906"))))
+ (date     (2024 04))
+ (keywords ("reinforcement learning" "large language models" "autonomous agents" "cyber defence"))
+ (doi      "10.5281/zenodo.10974183")
+ (abstract
+  "Cyber defence is one side of a dynamic and ever-evolving confrontation with attackers who seek to exploit weaknesses and cause unintended behaviour in digital systems. Historically both attackers and defenders have relied on human creativity and intellect to outdo one another, learning from each other’s tactics in a competitive,emergent, ad hoc curriculum. Modern cyber combatants increasingly rely on a variety of automated tools, machine learning; and perhaps more surprisingly, game playing in the pursuit of their goals. Whilst autonomous agents based on deep reinforcement learning have made tremendous breakthroughs playing complex strategy games such as Go, StarCraft, and Stratego, comparatively little progress has been witnessed in cyber defence games and the real-world problems they relate to. We highlight the current state of autonomous agents in cyber defence, presage their considerable future potential, and identify key research challenges both near and far.")
+ )
