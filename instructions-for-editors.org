@@ -17,8 +17,10 @@
     this submissision will be a report, save under the date of receipt
     ~YYYY-MM-DD/as-received~ until the report number is assigned.)
 
-  - [ ] Make any edits in ~NNN/in-progress~. The final version -- with
-    cover sheet -- should be saved in ~NNN/as-published~.
+  - [ ] Make any edits in ~NNN/in-progress~.
+
+  - [ ] The final version -- with cover sheet -- should be saved in
+    ~NNN/as-published~.
 
 * Pre-publication [0/5]
 
