@@ -1,11 +1,11 @@
 
-site: index.html feed.rss
+site: index.html feed.xml
 
 index.html: site.scrbl site.css db-table.rkt
 	racket site.scrbl > index.html
 
-feed.rss: feed.rkt db-table.rkt
-	racket feed.rkt > feed.rss
+feed.xml: feed.rkt db-table.rkt
+	racket feed.rkt > feed.xml
 
 install:
-	install index.html feed.rss ../docs
+	install index.html feed.xml ../docs
