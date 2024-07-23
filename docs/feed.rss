@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Turing Technical Reports</title>
+    <atom:link rel="self" href="https://alan-turing-institute.github.io/technical-reports/feed.rss" type="application/rss+xml" />
+    <link>https://www.turing.ac.uk/news/technical-reports</link>
+    <pubDate>Tue, 23 Jul 2024 15:05:41 +0100</pubDate>
+    <lastBuildDate>Tue, 23 Jul 2024 15:05:41 +0100</lastBuildDate>
+    <generator>Racket v8.13 [cs] + splitflap v1.2 (https://racket-lang.org)</generator>
+    <description>Turing Technical Reports</description>
+    <language>en</language>
+    <item>
+      <title>Machine translation quality estimation literature review</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Mon, 1 Apr 2024 00:00:00 +0100</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.1</guid>
+      <description>&lt;report&gt;&lt;number&gt;1&lt;/number&gt;&lt;title&gt;Machine translation quality estimation literature review&lt;/title&gt;&lt;authors&gt;Joanna Knight, Radka Jersakova, James Bishop&lt;/authors&gt;&lt;date&gt;2024-04-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.10931558&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>Autonomous cyber defence: Beyond games?</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Mon, 1 Apr 2024 00:00:00 +0100</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.2</guid>
+      <description>&lt;report&gt;&lt;number&gt;2&lt;/number&gt;&lt;title&gt;Autonomous cyber defence: Beyond games?&lt;/title&gt;&lt;authors&gt;Chris Hicks, Vasilios Mavroudis&lt;/authors&gt;&lt;date&gt;2024-04-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.10974183&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+  </channel>
+</rss>
