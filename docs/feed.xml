@@ -5,8 +5,8 @@
     <title>Turing Technical Reports</title>
     <atom:link rel="self" href="https://alan-turing-institute.github.io/technical-reports/feed.rss" type="application/rss+xml" />
     <link>https://www.turing.ac.uk/news/technical-reports</link>
-    <pubDate>Tue, 23 Jul 2024 15:05:41 +0100</pubDate>
-    <lastBuildDate>Tue, 23 Jul 2024 15:05:41 +0100</lastBuildDate>
+    <pubDate>Tue, 23 Jul 2024 15:09:47 +0100</pubDate>
+    <lastBuildDate>Tue, 23 Jul 2024 15:09:47 +0100</lastBuildDate>
     <generator>Racket v8.13 [cs] + splitflap v1.2 (https://racket-lang.org)</generator>
     <description>Turing Technical Reports</description>
     <language>en</language>
