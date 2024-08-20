@@ -38,13 +38,13 @@
 	    gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=smith-2024.pdf NNN.pdf inputname.pdf      
           #+end_src
 
+* Publication [0/3]
+
   - [ ] Upload the complete document to the research archive.
 
   - [ ] Commit changes, merge into ~main~, and tag this commit with
     ~NNN~. 
   
-* Publication [0/3]
-
   - [ ] Change to the branch ~github-pages-publish~ and merge changes
     from ~main~.
 
