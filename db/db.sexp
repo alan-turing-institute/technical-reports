@@ -62,17 +62,17 @@
  )
 
 (report
- (number 3)
- (title "Benchmarking the performance of GPT-2 type applications on GPU-accelerated computing resources")
- (authors (("Tomas Lazauskas" (orcid "https://orcid.org/0000-0002-8351-9857"))
-	   ("David Llewellyn-Jone" (orcid "https://orcid.org/0000-0002-3836-7903"))))
- (date (2024 08))
- (doi )
+ (number   3)
+ (title    "Benchmarking the performance of GPT-2 type applications on GPU-accelerated computing resources")
+ (authors  (("Tomas Lazauskas" (orcid "https://orcid.org/0000-0002-8351-9857"))
+	    ("David Llewellyn-Jones" (orcid "https://orcid.org/0000-0002-3836-7903"))))
+ (date     (2024 08))
+ (doi      "10.5281/zenodo.13349541")
  (keywords ("computer hardware"
 	    "benchmarking"
 	    "high-performance computing"
 	    "parallel computation"
-	    "distribution computation"
+	    "distributed computation"
 	    "GPU"))
- (abstract "In this report we look at eight GPU-accelerated systems representing a cross-section of the available Tier 2 HPC systems in the UK. These include a mixture of GPU-accelerated platforms from Nvidia, AMD and Intel. For each system, we perform a set of benchmarking experiments by training a GPT-2 model using a mixture of parameters and hyperparameters. These include model size, number of GPUs,floating point data type, training data size, distribution strategies and batch size. Our interest is in performance measured by time taken to complete an epoch of training rather than convergence speed. We also measure memory usage. The overall aim is to compare systems in order to provide researchers intending to perform AI training with some benchmarks for what to expect in terms of training speed for a model in a non-optimised real-world scenario."))
+ (abstract  "In this report we look at eight GPU-accelerated systems representing a cross-section of the available Tier 2 HPC systems in the UK. These include a mixture of GPU-accelerated platforms from Nvidia, AMD and Intel. For each system, we perform a set of benchmarking experiments by training a GPT-2 model using a mixture of parameters and hyperparameters. These include model size, number of GPUs,floating point data type, training data size, distribution strategies and batch size. Our interest is in performance measured by time taken to complete an epoch of training rather than convergence speed. We also measure memory usage. The overall aim is to compare systems in order to provide researchers intending to perform AI training with some benchmarks for what to expect in terms of training speed for a model in a non-optimised real-world scenario."))
  
