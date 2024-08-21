@@ -1,3 +1,4 @@
+;; -*- mode:scheme; -*- 
 ;; THE ALAN TURING INSTITUTE TECHNICAL REPORTS SERIES DATABASE
 ;;
 ;; (c) The Alan Turing Institute 2024
@@ -59,3 +60,19 @@
  (abstract
   "Cyber defence is one side of a dynamic and ever-evolving confrontation with attackers who seek to exploit weaknesses and cause unintended behaviour in digital systems. Historically both attackers and defenders have relied on human creativity and intellect to outdo one another, learning from each other’s tactics in a competitive,emergent, ad hoc curriculum. Modern cyber combatants increasingly rely on a variety of automated tools, machine learning; and perhaps more surprisingly, game playing in the pursuit of their goals. Whilst autonomous agents based on deep reinforcement learning have made tremendous breakthroughs playing complex strategy games such as Go, StarCraft, and Stratego, comparatively little progress has been witnessed in cyber defence games and the real-world problems they relate to. We highlight the current state of autonomous agents in cyber defence, presage their considerable future potential, and identify key research challenges both near and far.")
  )
+
+(report
+ (number   3)
+ (title    "Benchmarking the performance of GPT-2 type applications on GPU-accelerated computing resources")
+ (authors  (("Tomas Lazauskas" (orcid "https://orcid.org/0000-0002-8351-9857"))
+	    ("David Llewellyn-Jones" (orcid "https://orcid.org/0000-0002-3836-7903"))))
+ (date     (2024 08))
+ (doi      "10.5281/zenodo.13349541")
+ (keywords ("computer hardware"
+	    "benchmarking"
+	    "high-performance computing"
+	    "parallel computation"
+	    "distributed computation"
+	    "GPU"))
+ (abstract  "In this report we look at eight GPU-accelerated systems representing a cross-section of the available Tier 2 HPC systems in the UK. These include a mixture of GPU-accelerated platforms from Nvidia, AMD and Intel. For each system, we perform a set of benchmarking experiments by training a GPT-2 model using a mixture of parameters and hyperparameters. These include model size, number of GPUs,floating point data type, training data size, distribution strategies and batch size. Our interest is in performance measured by time taken to complete an epoch of training rather than convergence speed. We also measure memory usage. The overall aim is to compare systems in order to provide researchers intending to perform AI training with some benchmarks for what to expect in terms of training speed for a model in a non-optimised real-world scenario."))
+ 
