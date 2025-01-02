@@ -5,9 +5,9 @@
     <title>Turing Technical Reports</title>
     <atom:link rel="self" href="https://alan-turing-institute.github.io/technical-reports/feed.rss" type="application/rss+xml" />
     <link>https://www.turing.ac.uk/news/technical-reports</link>
-    <pubDate>Tue, 23 Jul 2024 15:09:47 +0100</pubDate>
-    <lastBuildDate>Tue, 23 Jul 2024 15:09:47 +0100</lastBuildDate>
-    <generator>Racket v8.13 [cs] + splitflap v1.2 (https://racket-lang.org)</generator>
+    <pubDate>Wed, 21 Aug 2024 13:31:32 +0100</pubDate>
+    <lastBuildDate>Wed, 21 Aug 2024 13:31:32 +0100</lastBuildDate>
+    <generator>Racket v8.14 [cs] + splitflap v1.2 (https://racket-lang.org)</generator>
     <description>Turing Technical Reports</description>
     <language>en</language>
     <item>
@@ -25,6 +25,14 @@
       <author>jgeddes@turing.ac.uk (James Geddes)</author>
       <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.2</guid>
       <description>&lt;report&gt;&lt;number&gt;2&lt;/number&gt;&lt;title&gt;Autonomous cyber defence: Beyond games?&lt;/title&gt;&lt;authors&gt;Chris Hicks, Vasilios Mavroudis&lt;/authors&gt;&lt;date&gt;2024-04-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.10974183&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>Benchmarking the performance of GPT-2 type applications on GPU-accelerated computing resources</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Thu, 1 Aug 2024 00:00:00 +0100</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.3</guid>
+      <description>&lt;report&gt;&lt;number&gt;3&lt;/number&gt;&lt;title&gt;Benchmarking the performance of GPT-2 type applications on GPU-accelerated computing resources&lt;/title&gt;&lt;authors&gt;Tomas Lazauskas, David Llewellyn-Jones&lt;/authors&gt;&lt;date&gt;2024-08-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.13349541&lt;/doi&gt;&lt;/report&gt;</description>
     </item>
   </channel>
 </rss>
