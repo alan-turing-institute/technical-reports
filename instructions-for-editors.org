@@ -24,7 +24,8 @@
 
 * Pre-publication [0/5]
 
-  - [ ] Make a new repo branch for this report
+  - [ ] Make a new branch in the repo for this report, eg., 000N for
+    report N.
 
   - [ ] Obtain a new DOI.
 
