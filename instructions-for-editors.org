@@ -27,7 +27,11 @@
   - [ ] Make a new branch in the repo for this report, eg., 000N for
     report N.
 
-  - [ ] Obtain a new DOI.
+  - [ ] Obtain a new DOI. Currently using Zenodo. The publisher is
+    "The Alan Turing Institute". The journal is "The Alan Turing
+    Institute Technical Reports"  Publication type is "Publication /
+    Technical note". Licence is CC BY-SA. Enter the report number in
+    "Page range or article number."
 
   - [ ] Generate a new cover sheet [0/4]. 
     - [ ] Add the metadata to the reports database, ~db/db.sexp~.
@@ -55,4 +59,3 @@
   - [ ] Run ~make install~ (which moves the ~index.html~ to ~docs/~)
     and then commit and push this branch (which published the site to
     GitHub Pages).
-    

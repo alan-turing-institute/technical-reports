@@ -76,3 +76,15 @@
 	    "GPU"))
  (abstract  "In this report we look at eight GPU-accelerated systems representing a cross-section of the available Tier 2 HPC systems in the UK. These include a mixture of GPU-accelerated platforms from Nvidia, AMD and Intel. For each system, we perform a set of benchmarking experiments by training a GPT-2 model using a mixture of parameters and hyperparameters. These include model size, number of GPUs,floating point data type, training data size, distribution strategies and batch size. Our interest is in performance measured by time taken to complete an epoch of training rather than convergence speed. We also measure memory usage. The overall aim is to compare systems in order to provide researchers intending to perform AI training with some benchmarks for what to expect in terms of training speed for a model in a non-optimised real-world scenario."))
  
+(report
+ (number   4)
+ (title    "RCTab: An Azure subscription management system")
+ (authors (("Iain Stenson" (orcid "0000-0001-7848-4154"))
+	   ("Tomas Lazauskas" (orcid "0000-0002-8351-9857"))
+	   ("Oscar Giles" (orcid "0000-0002-4056-1916"))
+	   ("Joseph Palmer" (orcid "0000-0002-5593-9352"))
+	   ("Pamela Wochner" (orcid "0000-0003-4066-8614"))
+	   ("Eseoghene Ben-Iwhiwhu" (orcid "0000-0002-1176-866X"))))
+ (date     (2025 01))
+ (doi      "")
+ (keywords "TBD"))
