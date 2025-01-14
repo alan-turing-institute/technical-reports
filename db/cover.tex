@@ -18,7 +18,7 @@
 \usepackage{xcolor}
 %\usepackage[fullpage, patternsize=1cm]{gridpapers}
 %%
-\geometry{textwidth=11\turingcolwd}
+\geometry{textwidth=13\turingcolwd}
 \begin{document}
 \sffamily
 %%
@@ -59,16 +59,17 @@
 %%
 %% Textual material ..................................................
 %
-\large\bfseries
+\Large\bfseries
 \color{white}
 % 
 % The depth of the bar on the T in 34pt regular Helvetica
 % is 2.8pt, which I'm going to call 0.15ex
 \newlength{\ttrwidth}%
-\settowidth{\ttrwidth}{\mbox{Turing Technical Report}}%
+\settowidth{\ttrwidth}{\mbox{Technical Report}}%
 %
-{\offinterlineskip\rule{11\turingcolwd}{0.45ex}\\[0.5ex]
- Turing Technical Report\par}
+% {\offinterlineskip\rule{11\turingcolwd}{0.45ex}\\[0.5ex]
+{\offinterlineskip\rule{\ttrwidth}{0.45ex}\\[0.5ex]
+ Technical Report\par}
 \vspace{1\turingcolht}
 
 \mdseries\large
@@ -85,7 +86,8 @@
 \mdseries
 \newlength{\ttrnumwidth}%
 \settowidth{\ttrnumwidth}{\mbox{Report number \reportNumber}}%
-{\offinterlineskip\rule{4\turingcolwd}{0.15ex}\\[0.5ex]
+% {\offinterlineskip\rule{4\turingcolwd}{0.15ex}\\[0.5ex]
+{\offinterlineskip\rule{\ttrnumwidth}{0.15ex}\\[0.5ex]
 Report number \reportNumber\par}
 \end{titlepage}
 %%
@@ -115,3 +117,7 @@ London, England, NW1~2DB, United Kingdom.
 https://doi.org/\reportDOI
 \end{titlepage}
 \end{document}
+
+% Local Variables:
+% TeX-engine: xetex
+% End:
