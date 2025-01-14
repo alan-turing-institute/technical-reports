@@ -83,7 +83,7 @@
 	    ("Radka Jersakova" (orcid "https://orcid.org/0000-0001-6846-7158"))
 	    ("James Bishop"    (orcid "https://orcid.org/0009-0003-0406-3367"))))
  (date     (2025 01))
- (doi      "")
+ (doi      "10.5281/zenodo.14639667")
  (keywords ("machine translation"
 	    "quality estimation"
 	    "pretrained language models"
