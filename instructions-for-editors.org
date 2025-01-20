@@ -48,7 +48,7 @@
   - [ ] Upload the complete document to the research archive.
 
   - [ ] Commit changes, merge into ~main~, and tag this commit with
-    ~NNN~. 
+    ~NNNN~. 
   
   - [ ] Change to the branch ~github-pages-publish~ and merge changes
     from ~main~.
