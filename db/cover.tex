@@ -15,9 +15,10 @@
 %%
 \documentclass[a4paper]{article}
 \usepackage{ttr}
-\usepackage{letterspace}
+\usepackage{xcolor}
 %\usepackage[fullpage, patternsize=1cm]{gridpapers}
 %%
+\geometry{textwidth=13\turingcolwd}
 \begin{document}
 \sffamily
 %%
@@ -26,59 +27,87 @@
 \begin{titlepage}
 \raggedright\setlength{\parindent}{0pt}
 %%
-%% The Alan Turing Institute Logotype
+%% Imagery ...........................................................
+%%
+% 
+% Background image layer
+% Omit since we don't have the official images yet
+%
+% \begin{tikzpicture}[remember picture,overlay]
+%   \node at (current page.center)%
+% {\includegraphics[width=\paperwidth]{cover-image.jpg}};
+% \end{tikzpicture}
+%
+% Background "Turing layer"
+% Created with the last of the portrait mode grids shown on page 77
+% of the Turing Identity
+%
+\begin{tikzpicture}[remember picture,overlay,shift=(current page.south west)]
+  \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+    \fill (0, 0.34) -- (0.89, 0.55) -- (0.55, 1) -- (0, 1) -- cycle;
+  \end{scope}
+\end{tikzpicture}
+%
+% Logotype
+%
 \begin{tikzpicture}[remember picture,overlay]
   \node [anchor=north west, xshift=\turingcolwd, yshift=-\turingcolht] at (current page.north west)%
-{\includegraphics[width=7\turingcolwd, trim=6pt 0 0 5pt]{logo.pdf}};
+{\includegraphics[width=5\turingcolwd, trim=6pt 0 0 5pt]{ATI_logo_white.eps}};
 \end{tikzpicture}
 %%
-\vspace*{5\turingcolht} 
-\vspace*{-\baselineskip}
+\vspace*{4\turingcolht} 
+\vspace*{-\baselineskip}\par
 %%
+%% Textual material ..................................................
+%
 \Large\bfseries
-
-%% The depth of the bar on the T in 34pt regular Helvetica
-%% is 2.8pt, which I'm going to call 0.15ex
-%\newlength{\reportnamewidth}%
-%\settowidth{\reportnamewidth}{\mbox{Turing Technical Report}}%
-{\offinterlineskip\rule{14\turingcolwd}{0.45ex}\\[0.5ex]
-  \textls[-20]{Turing Technical Report}\par}
-
-\vspace{2\turingcolht}
+\color{white}
+% 
+% The depth of the bar on the T in 34pt regular Helvetica
+% is 2.8pt, which I'm going to call 0.15ex
+\newlength{\ttrwidth}%
+\settowidth{\ttrwidth}{\mbox{Technical Report}}%
+%
+% {\offinterlineskip\rule{11\turingcolwd}{0.45ex}\\[0.5ex]
+{\offinterlineskip\rule{\ttrwidth}{0.45ex}\\[0.5ex]
+ Technical Report\par}
+\vspace{1\turingcolht}
 
 \mdseries\large
 \reportTitle\relax  
-\vspace{1\turingcolht}
+\bigskip
 
 \mdseries\normalsize
 \reportAuthors\relax  
 \medskip
 
 \reportPublicationDate\relax
-\vfill
+\vspace{1\turingcolht}
 
 \mdseries
-{\offinterlineskip\rule{4\turingcolwd}{0.15ex}\\[0.5ex]
+\newlength{\ttrnumwidth}%
+\settowidth{\ttrnumwidth}{\mbox{Report number \reportNumber}}%
+% {\offinterlineskip\rule{4\turingcolwd}{0.15ex}\\[0.5ex]
+{\offinterlineskip\rule{\ttrnumwidth}{0.15ex}\\[0.5ex]
 Report number \reportNumber\par}
 \end{titlepage}
 %%
 %% Page 2 ============================================================
 %%
 \begin{titlepage}
+  \newgeometry{left=\turingcolwd,textwidth=9\turingcolwd}
 \raggedright\setlength{\parindent}{0pt}%
 \vspace*{5\turingcolht}
 
-\begin{minipage}{9\turingcolwd}
 \small\raggedright%
+\fontsize{8}{11}\selectfont
 {\offinterlineskip\rule{9\turingcolwd}{0.15ex}\\[0.5ex]
 \copyright\ The Alan Turing Institute \reportCopyrightDate\par}
 \medskip 
 
-This work is licensed under Creative Commons licence
-CC~BY-SA~4.0. To view a copy of this licence, visit
-\fontsize{7.5}{11}\selectfont
-\texttt{http://creativecommons.org/licenses/by-sa/4.0/}
-\medskip
+This work is licensed under Creative Commons licence CC~BY-SA~4.0. To
+view a copy of this licence, visit
+http://creativecommons.org/licenses/by-sa/4.0/ \medskip
 
 The Alan Turing Institute is a charity incorporated and registered in
 England and Wales with company number 09512457 and charity number
@@ -86,7 +115,10 @@ England and Wales with company number 09512457 and charity number
 London, England, NW1~2DB, United Kingdom.
 \medskip
 
-\texttt{https://doi.org/\reportDOI}
-\end{minipage}
+https://doi.org/\reportDOI
 \end{titlepage}
 \end{document}
+
+% Local Variables:
+% TeX-engine: xetex
+% End:
