@@ -4,6 +4,7 @@
 
   - [ ] Report is readable and printable.
   - [ ] Okay to publish.
+  - [ ] Copyedited.
   - [ ] Keywords.
   - [ ] Author ORCID iDs.
     
