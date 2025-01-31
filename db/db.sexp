@@ -78,7 +78,7 @@
 
 (report
  (number   4)
- (title    "Practical Perspectives on Black-Box Critical Error Detection for Machine Translation")
+ (title    "Practical perspectives on black-box critical error detection for machine translation")
  (authors  (("Joanna Knight"   (orcid "https://orcid.org/0000-0002-2558-2815"))
 	    ("Radka Jersakova" (orcid "https://orcid.org/0000-0001-6846-7158"))
 	    ("James Bishop"    (orcid "https://orcid.org/0009-0003-0406-3367"))))
@@ -88,6 +88,24 @@
 	    "quality estimation"
 	    "pretrained language models"
 	    "large language models")))
+
+(report
+ (number    5)
+ (title     "Equitable AI in DPI: Responsible, fair, inclusive AI-enabled digital public infrastructure")
+ (authors   (("Alpay Sabuncuoglu" (orcid "https://orcid.org/0000-0002-4415-0516"))
+	     ("Carsten Maple"     (orcid "https://orcid.org/0000-0002-4715-212X"))
+	     ("Mark Hooper"       (orcid "https://orcid.org/0000-0002-1440-7181"))
+	     ("Jon Crowcroft"     (orcid "https://orcid.org/0000-0002-7013-0121"))))
+ (date       (2025 01))
+ (doi       "")
+ (keywords  ("equitable AI"
+	     "responsible AI"
+	     "AI fairness"
+	     "digital public infrastructure"
+	     "fairness evaluation"
+	     "large language models for digital public infrastructure"
+	     "fairness of biometric identification and recognition")))
+
 
 ;; (report
 ;;  (number   A)
