@@ -78,7 +78,7 @@
 
 (report
  (number   4)
- (title    "Practical Perspectives on Black-Box Critical Error Detection for Machine Translation")
+ (title    "Practical perspectives on black-box critical error detection for machine translation")
  (authors  (("Joanna Knight"   (orcid "https://orcid.org/0000-0002-2558-2815"))
 	    ("Radka Jersakova" (orcid "https://orcid.org/0000-0001-6846-7158"))
 	    ("James Bishop"    (orcid "https://orcid.org/0009-0003-0406-3367"))))
@@ -88,6 +88,36 @@
 	    "quality estimation"
 	    "pretrained language models"
 	    "large language models")))
+
+(report
+ (number   5)
+ (title    "Unmasking bias in large language models: A survey")
+ (authors  (("Eda Özyiğit" (orcid "https://orcid.org/0000-0002-3998-9915"))))
+ (date     (2025 02))
+ (doi      "10.5281/zenodo.14781594")
+ (keywords ("large language models"
+	    "bias"
+	    "bias evaluation"))
+ (abstract "The rapid adoption of Artificial Intelligence (AI) across various industries has raised significant concerns about potential risks, particularly biases in large language models (LLMs). These models are widely used in applications from customer service and healthcare to educational tools, influencing decisions that impact diverse populations. However, LLMs often inherit and amplify biases present in the large datasets on which they are trained, risking the reinforcement of stereotypes and marginalisation of certain groups. This work presents a comprehensive survey on bias and fairness in LLMs. It explores various sources of biases, and the harms (e.g., toxicity, discrimination, etc.) they can cause. To address these challenges, bias detection, mitigation, and evaluation approaches are reviewed. The study concludes by outlining limitations and offering insights into future research directions for formulating effective strategies. The findings emphasise the significant need for ongoing research and proactive regulatory measures to address and mitigate bias in LLMs to ensure that AI technologies are deployed ethically, equitably, and with public trust as a priority."))
+
+(report
+ (number    6)
+ (title     "Equitable AI in DPI: Responsible, fair, inclusive AI-enabled digital public infrastructure")
+ (authors   (("Alpay Sabuncuoglu" (orcid "https://orcid.org/0000-0002-4415-0516"))
+	     ("Carsten Maple"     (orcid "https://orcid.org/0000-0002-4715-212X"))
+	     ("Mark Hooper"       (orcid "https://orcid.org/0000-0002-1440-7181"))
+	     ("Jon Crowcroft"     (orcid "https://orcid.org/0000-0002-7013-0121"))))
+ (ack       "This report is based on research funded by (or in part by) the Gates Foundation INV-001309. The findings and conclusions contained within are those of the authors and do not necessarily reflect positions or policies of the Gates Foundation.")
+ (date       (2025 02))
+ (doi       "10.5281/zenodo.14501982")
+ (keywords  ("equitable AI"
+	     "responsible AI"
+	     "AI fairness"
+	     "digital public infrastructure"
+	     "fairness evaluation"
+	     "large language models for digital public infrastructure"
+	     "fairness of biometric identification and recognition")))
+
 
 ;; (report
 ;;  (number   A)

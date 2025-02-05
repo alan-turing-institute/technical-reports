@@ -4,6 +4,7 @@
 
   - [ ] Report is readable and printable.
   - [ ] Okay to publish.
+  - [ ] Copyedited.
   - [ ] Keywords.
   - [ ] Author ORCID iDs.
     
@@ -22,16 +23,19 @@
   - [ ] The final version -- with cover sheet -- should be saved in
     ~NNN/as-published~.
 
-* Pre-publication [0/5]
+* Pre-publication [0/3]
 
   - [ ] Make a new branch in the repo for this report, eg., 000N for
     report N.
 
-  - [ ] Obtain a new DOI. Currently using Zenodo. The publisher is
-    "The Alan Turing Institute". The journal is "The Alan Turing
-    Institute Technical Reports"  Publication type is "Publication /
-    Technical note". Licence is CC BY-SA. Enter the report number in
-    "Page range or article number."
+  - [ ] Obtain a new DOI and create publication record on Zenodo.
+    - Publication type is "Publication / Technical note".
+    - Licence is CC BY-SA. 
+    - The publisher is "The Alan Turing Institute".
+    - The journal is "The Alan Turing Institute Technical Reports"
+      article number."
+    - Enter the report number in "Page range or article number" (Not
+      volume or issue.)
 
   - [ ] Generate a new cover sheet [0/4]. 
     - [ ] Add the metadata to the reports database, ~db/db.sexp~.
@@ -48,7 +52,7 @@
   - [ ] Upload the complete document to the research archive.
 
   - [ ] Commit changes, merge into ~main~, and tag this commit with
-    ~NNN~. 
+    ~NNNN~. 
   
   - [ ] Change to the branch ~github-pages-publish~ and merge changes
     from ~main~.
