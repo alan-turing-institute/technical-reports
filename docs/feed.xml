@@ -5,8 +5,8 @@
     <title>Turing Technical Reports</title>
     <atom:link rel="self" href="https://alan-turing-institute.github.io/technical-reports/feed.rss" type="application/rss+xml" />
     <link>https://www.turing.ac.uk/news/technical-reports</link>
-    <pubDate>Mon, 20 Jan 2025 13:26:04 +0000</pubDate>
-    <lastBuildDate>Mon, 20 Jan 2025 13:26:04 +0000</lastBuildDate>
+    <pubDate>Wed, 5 Feb 2025 10:26:11 +0000</pubDate>
+    <lastBuildDate>Wed, 5 Feb 2025 10:26:11 +0000</lastBuildDate>
     <generator>Racket v8.15 [cs] + splitflap v1.2 (https://racket-lang.org)</generator>
     <description>Turing Technical Reports</description>
     <language>en</language>
@@ -35,12 +35,20 @@
       <description>&lt;report&gt;&lt;number&gt;3&lt;/number&gt;&lt;title&gt;Benchmarking the performance of GPT-2 type applications on GPU-accelerated computing resources&lt;/title&gt;&lt;authors&gt;Tomas Lazauskas, David Llewellyn-Jones&lt;/authors&gt;&lt;date&gt;2024-08-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.13349541&lt;/doi&gt;&lt;/report&gt;</description>
     </item>
     <item>
-      <title>Practical Perspectives on Black-Box Critical Error Detection for Machine Translation</title>
+      <title>Practical perspectives on black-box critical error detection for machine translation</title>
       <link>https://www.turing.ac.uk/news/technical-reports</link>
       <pubDate>Wed, 1 Jan 2025 00:00:00 +0000</pubDate>
       <author>jgeddes@turing.ac.uk (James Geddes)</author>
       <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.4</guid>
-      <description>&lt;report&gt;&lt;number&gt;4&lt;/number&gt;&lt;title&gt;Practical Perspectives on Black-Box Critical Error Detection for Machine Translation&lt;/title&gt;&lt;authors&gt;Joanna Knight, Radka Jersakova, James Bishop&lt;/authors&gt;&lt;date&gt;2025-01-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.14639667&lt;/doi&gt;&lt;/report&gt;</description>
+      <description>&lt;report&gt;&lt;number&gt;4&lt;/number&gt;&lt;title&gt;Practical perspectives on black-box critical error detection for machine translation&lt;/title&gt;&lt;authors&gt;Joanna Knight, Radka Jersakova, James Bishop&lt;/authors&gt;&lt;date&gt;2025-01-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.14639667&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>Unmasking bias in large language models: A survey</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Sat, 1 Feb 2025 00:00:00 +0000</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.5</guid>
+      <description>&lt;report&gt;&lt;number&gt;5&lt;/number&gt;&lt;title&gt;Unmasking bias in large language models: A survey&lt;/title&gt;&lt;authors&gt;Eda Özyiğit&lt;/authors&gt;&lt;date&gt;2025-02-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.14781594&lt;/doi&gt;&lt;/report&gt;</description>
     </item>
   </channel>
 </rss>
