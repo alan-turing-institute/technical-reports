@@ -109,7 +109,7 @@
 	     ("Jon Crowcroft"     (orcid "https://orcid.org/0000-0002-7013-0121"))))
  (ack       "This report is based on research funded by (or in part by) the Gates Foundation INV-001309. The findings and conclusions contained within are those of the authors and do not necessarily reflect positions or policies of the Gates Foundation.")
  (date       (2025 02))
- (doi       "10.5281/zenodo.14501982")
+ (doi       "10.5281/zenodo.14826024")
  (keywords  ("equitable AI"
 	     "responsible AI"
 	     "AI fairness"
