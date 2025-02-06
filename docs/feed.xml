@@ -5,8 +5,8 @@
     <title>Turing Technical Reports</title>
     <atom:link rel="self" href="https://alan-turing-institute.github.io/technical-reports/feed.rss" type="application/rss+xml" />
     <link>https://www.turing.ac.uk/news/technical-reports</link>
-    <pubDate>Wed, 5 Feb 2025 10:26:11 +0000</pubDate>
-    <lastBuildDate>Wed, 5 Feb 2025 10:26:11 +0000</lastBuildDate>
+    <pubDate>Thu, 6 Feb 2025 15:38:53 +0000</pubDate>
+    <lastBuildDate>Thu, 6 Feb 2025 15:38:53 +0000</lastBuildDate>
     <generator>Racket v8.15 [cs] + splitflap v1.2 (https://racket-lang.org)</generator>
     <description>Turing Technical Reports</description>
     <language>en</language>
@@ -49,6 +49,14 @@
       <author>jgeddes@turing.ac.uk (James Geddes)</author>
       <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.5</guid>
       <description>&lt;report&gt;&lt;number&gt;5&lt;/number&gt;&lt;title&gt;Unmasking bias in large language models: A survey&lt;/title&gt;&lt;authors&gt;Eda Özyiğit&lt;/authors&gt;&lt;date&gt;2025-02-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.14781594&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>Equitable AI in DPI: Responsible, fair, inclusive AI-enabled digital public infrastructure</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Sat, 1 Feb 2025 00:00:00 +0000</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.6</guid>
+      <description>&lt;report&gt;&lt;number&gt;6&lt;/number&gt;&lt;title&gt;Equitable AI in DPI: Responsible, fair, inclusive AI-enabled digital public infrastructure&lt;/title&gt;&lt;authors&gt;Alpay Sabuncuoglu, Carsten Maple, Mark Hooper, Jon Crowcroft&lt;/authors&gt;&lt;date&gt;2025-02-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.14826024&lt;/doi&gt;&lt;/report&gt;</description>
     </item>
   </channel>
 </rss>
