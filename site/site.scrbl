@@ -68,9 +68,10 @@
 
     @li{
 
-     @p{The final report should be a pdf, formatted for A4 paper. Page
-      numbering should start on page 3, as a standard cover sheet will
-      be added.}
+     @p{The final report should be a pdf, formatted for A4 paper and
+      suitable for printing (so that, for example, URLs are spelled out
+      in full rather than being hyperlinks). Page numbering should
+      start on page 3, as a standard cover sheet will be added.}
     }
    }
 
