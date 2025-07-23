@@ -39,7 +39,7 @@
 
   - [ ] Generate a new cover sheet [0/4]. 
     - [ ] Add the metadata to the reports database, ~db/db.sexp~.
-    - [ ] In ~db~ run ~make cover number=NNN~ (see the README there
+    - [ ] In ~db~ run ~make cover number=N~ (see the README there
       for instructions).
     - [ ] Save the cover sheet, for reference, in ~coversheets/NNN.pdf~.
     - [ ] Add the cover sheet to the final document version. Use
