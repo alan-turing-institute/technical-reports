@@ -4,6 +4,7 @@
 
   - [ ] Report is readable and printable.
   - [ ] Okay to publish.
+  - [ ] Copyedited.
   - [ ] Keywords.
   - [ ] Author ORCID iDs.
     
@@ -22,15 +23,23 @@
   - [ ] The final version -- with cover sheet -- should be saved in
     ~NNN/as-published~.
 
-* Pre-publication [0/5]
+* Pre-publication [0/3]
 
-  - [ ] Make a new repo branch for this report
+  - [ ] Make a new branch in the repo for this report, eg., 000N for
+    report N.
 
-  - [ ] Obtain a new DOI.
+  - [ ] Obtain a new DOI and create publication record on Zenodo.
+    - Publication type is "Publication / Technical note".
+    - Licence is CC BY-SA. 
+    - The publisher is "The Alan Turing Institute".
+    - The journal is "The Alan Turing Institute Technical Reports"
+      article number."
+    - Enter the report number in "Page range or article number" (Not
+      volume or issue.)
 
   - [ ] Generate a new cover sheet [0/4]. 
     - [ ] Add the metadata to the reports database, ~db/db.sexp~.
-    - [ ] In ~db~ run ~make cover number=NNN~ (see the README there
+    - [ ] In ~db~ run ~make cover number=N~ (see the README there
       for instructions).
     - [ ] Save the cover sheet, for reference, in ~coversheets/NNN.pdf~.
     - [ ] Add the cover sheet to the final document version. Use
@@ -38,13 +47,13 @@
 	    gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=smith-2024.pdf NNN.pdf inputname.pdf      
           #+end_src
 
+* Publication [0/3]
+
   - [ ] Upload the complete document to the research archive.
 
   - [ ] Commit changes, merge into ~main~, and tag this commit with
-    ~NNN~. 
+    ~NNNN~. 
   
-* Publication [0/3]
-
   - [ ] Change to the branch ~github-pages-publish~ and merge changes
     from ~main~.
 
@@ -54,4 +63,3 @@
   - [ ] Run ~make install~ (which moves the ~index.html~ to ~docs/~)
     and then commit and push this branch (which published the site to
     GitHub Pages).
-    

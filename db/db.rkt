@@ -24,10 +24,12 @@
   [report-author-names (-> report/c (listof string?))]
   [report-date         (-> report/c (listof exact-nonnegative-integer?))]
   [report-doi          (-> report/c string?)]
-  [report-keywords     (-> report/c (listof string?))]))
+  [report-keywords     (-> report/c (listof string?))]
+  [report-maybe-ack    (-> report/c (or/c string? #f))]))
 
 ;; ------------------------------------------------------------
 
+;; The database db.sexp is in the same directory as this module
 (define-runtime-path the-database "db.sexp")
 
 (define report/c (hash/c symbol? any/c))
@@ -35,6 +37,10 @@
 (define (get-report-field fld)
   (λ (rprt)
     (hash-ref rprt fld)))
+
+(define (get-optional-report-field fld)
+  (λ (rprt)
+    (hash-ref rprt fld #f)))
 
 (define report-number       (get-report-field 'number))
 (define report-title        (get-report-field 'title))
@@ -48,6 +54,9 @@
     (cond
       [(string? author) author]
       [(pair? author)   (car author)])))
+
+;; Not all reports have an acknowledgment
+(define report-maybe-ack (get-optional-report-field 'ack))
 
 ;; Read datums from standard input
 ;; Each datum must be an s-expression of the form

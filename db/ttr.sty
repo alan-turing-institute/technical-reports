@@ -1,7 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{ttr-cover}[2025-07-14 Turing Technical Reports]
+\ProvidesPackage{ttr}[2025-07-24 Turing Technical Reports]
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc} % I don't actually know if this is required
+\usepackage[T1]{fontenc}
+% I don't actually know if this is required
 %%
 %% Turing Technical Report Series
 %% Layout for title page and front matter
@@ -16,7 +17,7 @@
 \RequirePackage[a4paper]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{tikz}
-\RequirePackage{dejavu} % Support for the DejaVu fonts (used for URLs)
+
 %%
 \newlength{\turingcolwd} % 1/21 of the paper width
 \newlength{\turingcolht} % 1/21 of the paper height
@@ -28,12 +29,12 @@
 \geometry{textwidth=14\turingcolwd}
 %%
 %% Fonts
-%% Turing's house font is Neue Haas Unica
-%% This pacakge uses Helvetica as a substitute
-\renewcommand{\sfdefault}{phv}
 %%
+%% Turing's house font is Neue Haas Unica
+\usepackage{fontspec}
+\setsansfont{Neue Haas Unica Pro}
 %% Turing font sizes
-%% Adapted from the extsizes packag
+%% Adapted from the extsizes package
 %% Baselineskip: (ex = 0.51 font size)
 %% 6pt--24pt: 2.2ex 
 %% 26pt--60pt: 2.15ex 
