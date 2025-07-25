@@ -1,0 +1,79 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ttr-cover}[2025-07-14 Turing Technical Reports]
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % I don't actually know if this is required
+%%
+%% Turing Technical Report Series
+%% Layout for title page and front matter
+%%
+% The Turing's formatting guidelines divide the page into 21 equal
+% atomic columns. To format the title page we use a standard "four
+% column" layout, where each column is 4 atomic columns plus 1 gutter
+% atomic column. The document title runs from the left margin across
+% three columns, not including the final gutter, for a total of 5 + 5
+% + 4 = 14 atomic columns.
+%
+\RequirePackage[a4paper]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage{dejavu} % Support for the DejaVu fonts (used for URLs)
+%%
+\newlength{\turingcolwd} % 1/21 of the paper width
+\newlength{\turingcolht} % 1/21 of the paper height
+\setlength{\turingcolwd}{0.04762\paperwidth}
+\setlength{\turingcolht}{0.04762\paperheight}
+%%
+%% Assumes A-series paper size
+\geometry{left=\turingcolwd, vmargin=\turingcolht}
+\geometry{textwidth=14\turingcolwd}
+%%
+%% Fonts
+%% Turing's house font is Neue Haas Unica
+%% This pacakge uses Helvetica as a substitute
+\renewcommand{\sfdefault}{phv}
+%%
+%% Turing font sizes
+%% Adapted from the extsizes packag
+%% Baselineskip: (ex = 0.51 font size)
+%% 6pt--24pt: 2.2ex 
+%% 26pt--60pt: 2.15ex 
+%% 60pt--100pt: 2.1ex 
+\renewcommand\normalsize{%
+   \@setfontsize\normalsize{13}{15}%
+   \abovedisplayskip 13\p@ \@plus3\p@ \@minus6\p@
+   \abovedisplayshortskip \z@ \@plus4\p@
+   \belowdisplayshortskip 6\p@ \@plus4\p@ \@minus3\p@
+   \belowdisplayskip \abovedisplayskip
+   \let\@listi\@listI}
+\normalsize
+\renewcommand\small{%
+   \@setfontsize\small{8}{9.2}%
+   \abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus3\p@
+   \belowdisplayshortskip 4\p@ \@plus3\p@ \@minus3\p@
+   \def\@listi{\leftmargin\leftmargini%                TODO: Fix these
+               \topsep 9\p@ \@plus3\p@ \@minus5\p@
+               \parsep 4.5\p@ \@plus2\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+\renewcommand\footnotesize{%
+  \@setfontsize\footnotesize{5}{6}%
+   \abovedisplayskip 5\p@ \@plus2\p@ \@minus1\p@
+   \abovedisplayshortskip \z@ \@plus2\p@
+   \belowdisplayshortskip 5\p@ \@plus2\p@ \@minus1\p@
+   \def\@listi{\leftmargin\leftmargini%                TODO: Fix these
+               \topsep 6\p@ \@plus2\p@ \@minus2\p@
+               \parsep 3\p@ \@plus2\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+\renewcommand\scriptsize{\@setfontsize\scriptsize{5}{6}}  % SAME AS footnotesize
+\renewcommand\tiny{\@setfontsize\tiny{3}{4}}
+\renewcommand\large{\@setfontsize\large{21}{24}}
+\renewcommand\Large{\@setfontsize\Large{34}{39}}
+\renewcommand\LARGE{\@setfontsize\LARGE{56}{56}}
+\renewcommand\huge{\@setfontsize\huge{89}{89}}
+\renewcommand\Huge{\@setfontsize\Huge{144}{144}}
+
+
