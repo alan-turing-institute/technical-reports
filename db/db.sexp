@@ -140,7 +140,7 @@
 	    ("Tomas Lazauskas" (orcid "0000-0002-8351-9857"))
 	    ("Rosie Wood" (orcid "0000-0003-1623-1949"))
 	    ("Penelope Yong" (orcid "0009-0008-7145-8525"))
-	    ("Jonathan Carter" (orcid "0000-0002-1500-662X"))
+;	    ("Jonathan Carter" (orcid "0000-0002-1500-662X"))
 	    ("Lionel Tarassenko" (orcid "0000-0002-0118-1646"))
 	    ("Mark Girolami" (orcid "0000-0003-3008-253X"))
 	    ("James Geddes" (orcid "0009-0005-3586-2895"))
