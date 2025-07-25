@@ -134,7 +134,7 @@
 
 (report
  (number   8)
- (title    "Retrieval-agumented reasoning with lean language models")
+ (title    "Retrieval-augmented reasoning with lean language models")
  (authors  (("Ryan Sze-Yin Chan" (orcid "0009-0006-4209-924X"))
 	    ("Federico Nanni" (orcid "0000-0003-2484-4331"))
 	    ("Tomas Lazauskas" (orcid "0000-0002-8351-9857"))
