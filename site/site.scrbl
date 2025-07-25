@@ -13,7 +13,7 @@
 
  @body{
   @header{
-   The Alan Turing Institute Technical Reports Series (DRAFT)
+   The Alan Turing Institute Technical Reports Series
 
    @p{This microsite is not official and will be replaced.}
   }
