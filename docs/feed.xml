@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Turing Technical Reports</title>
+    <atom:link rel="self" href="https://alan-turing-institute.github.io/technical-reports/feed.rss" type="application/rss+xml" />
+    <link>https://www.turing.ac.uk/news/technical-reports</link>
+    <pubDate>Mon, 28 Jul 2025 09:39:33 +0100</pubDate>
+    <lastBuildDate>Mon, 28 Jul 2025 09:39:33 +0100</lastBuildDate>
+    <generator>Racket v8.17 [cs] + splitflap v1.2 (https://racket-lang.org)</generator>
+    <description>Turing Technical Reports</description>
+    <language>en</language>
+    <item>
+      <title>Machine translation quality estimation literature review</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Mon, 1 Apr 2024 00:00:00 +0100</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.1</guid>
+      <description>&lt;report&gt;&lt;number&gt;1&lt;/number&gt;&lt;title&gt;Machine translation quality estimation literature review&lt;/title&gt;&lt;authors&gt;Joanna Knight, Radka Jersakova, James Bishop&lt;/authors&gt;&lt;date&gt;2024-04-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.10931558&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>Autonomous cyber defence: Beyond games?</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Mon, 1 Apr 2024 00:00:00 +0100</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.2</guid>
+      <description>&lt;report&gt;&lt;number&gt;2&lt;/number&gt;&lt;title&gt;Autonomous cyber defence: Beyond games?&lt;/title&gt;&lt;authors&gt;Chris Hicks, Vasilios Mavroudis&lt;/authors&gt;&lt;date&gt;2024-04-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.10974183&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>Benchmarking the performance of GPT-2 type applications on GPU-accelerated computing resources</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Thu, 1 Aug 2024 00:00:00 +0100</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.3</guid>
+      <description>&lt;report&gt;&lt;number&gt;3&lt;/number&gt;&lt;title&gt;Benchmarking the performance of GPT-2 type applications on GPU-accelerated computing resources&lt;/title&gt;&lt;authors&gt;Tomas Lazauskas, David Llewellyn-Jones&lt;/authors&gt;&lt;date&gt;2024-08-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.13349541&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>Practical perspectives on black-box critical error detection for machine translation</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Wed, 1 Jan 2025 00:00:00 +0000</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.4</guid>
+      <description>&lt;report&gt;&lt;number&gt;4&lt;/number&gt;&lt;title&gt;Practical perspectives on black-box critical error detection for machine translation&lt;/title&gt;&lt;authors&gt;Joanna Knight, Radka Jersakova, James Bishop&lt;/authors&gt;&lt;date&gt;2025-01-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.14639667&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>Unmasking bias in large language models: A survey</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Sat, 1 Feb 2025 00:00:00 +0000</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.5</guid>
+      <description>&lt;report&gt;&lt;number&gt;5&lt;/number&gt;&lt;title&gt;Unmasking bias in large language models: A survey&lt;/title&gt;&lt;authors&gt;Eda Özyiğit&lt;/authors&gt;&lt;date&gt;2025-02-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.14781594&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>Equitable AI in DPI: Responsible, fair, inclusive AI-enabled digital public infrastructure</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Sat, 1 Feb 2025 00:00:00 +0000</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.6</guid>
+      <description>&lt;report&gt;&lt;number&gt;6&lt;/number&gt;&lt;title&gt;Equitable AI in DPI: Responsible, fair, inclusive AI-enabled digital public infrastructure&lt;/title&gt;&lt;authors&gt;Alpay Sabuncuoglu, Carsten Maple, Mark Hooper, Jon Crowcroft&lt;/authors&gt;&lt;date&gt;2025-02-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.14826024&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>RCTab: An Azure subscription management system</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Tue, 1 Jul 2025 00:00:00 +0100</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.7</guid>
+      <description>&lt;report&gt;&lt;number&gt;7&lt;/number&gt;&lt;title&gt;RCTab: An Azure subscription management system&lt;/title&gt;&lt;authors&gt;Iain Stenson, Oscar Giles, Joseph Palmer, Pamela Wochner, Eseoghene Ben-Iwhiwhu, Tomas Lazauskas&lt;/authors&gt;&lt;date&gt;2025-07-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.14615071&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>Retrieval-augmented reasoning with lean language models</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Tue, 1 Jul 2025 00:00:00 +0100</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.8</guid>
+      <description>&lt;report&gt;&lt;number&gt;8&lt;/number&gt;&lt;title&gt;Retrieval-augmented reasoning with lean language models&lt;/title&gt;&lt;authors&gt;Ryan Sze-Yin Chan, Federico Nanni, Tomas Lazauskas, Rosie Wood, Penelope Yong, Lionel Tarassenko, Mark Girolami, James Geddes, Andrew Duncan&lt;/authors&gt;&lt;date&gt;2025-07-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.16408412&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>Empirical evaluation of low-rank adaptation for efficient fine-tuning of large language models</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Tue, 1 Jul 2025 00:00:00 +0100</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.9</guid>
+      <description>&lt;report&gt;&lt;number&gt;9&lt;/number&gt;&lt;title&gt;Empirical evaluation of low-rank adaptation for efficient fine-tuning of large language models&lt;/title&gt;&lt;authors&gt;Tomas Lazauskas&lt;/authors&gt;&lt;date&gt;2025-07-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.16417805&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+  </channel>
+</rss>
