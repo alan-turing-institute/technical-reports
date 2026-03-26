@@ -5,9 +5,9 @@
     <title>Turing Technical Reports</title>
     <atom:link rel="self" href="https://alan-turing-institute.github.io/technical-reports/feed.rss" type="application/rss+xml" />
     <link>https://www.turing.ac.uk/news/technical-reports</link>
-    <pubDate>Mon, 28 Jul 2025 09:39:33 +0100</pubDate>
-    <lastBuildDate>Mon, 28 Jul 2025 09:39:33 +0100</lastBuildDate>
-    <generator>Racket v8.17 [cs] + splitflap v1.2 (https://racket-lang.org)</generator>
+    <pubDate>Thu, 26 Mar 2026 15:28:55 +0000</pubDate>
+    <lastBuildDate>Thu, 26 Mar 2026 15:28:55 +0000</lastBuildDate>
+    <generator>Splitflap 1.2 (https://joeldueck.com/what-about/splitflap)</generator>
     <description>Turing Technical Reports</description>
     <language>en</language>
     <item>
@@ -80,7 +80,15 @@
       <pubDate>Tue, 1 Jul 2025 00:00:00 +0100</pubDate>
       <author>jgeddes@turing.ac.uk (James Geddes)</author>
       <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.9</guid>
-      <description>&lt;report&gt;&lt;number&gt;9&lt;/number&gt;&lt;title&gt;Empirical evaluation of low-rank adaptation for efficient fine-tuning of large language models&lt;/title&gt;&lt;authors&gt;Tomas Lazauskas&lt;/authors&gt;&lt;date&gt;2025-07-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.16417805&lt;/doi&gt;&lt;/report&gt;</description>
+      <description>&lt;report&gt;&lt;number&gt;9&lt;/number&gt;&lt;title&gt;Empirical evaluation of low-rank adaptation for efficient fine-tuning of large language models&lt;/title&gt;&lt;authors&gt;Tomas Lazauskas&lt;/authors&gt;&lt;date&gt;2025-07-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.16811372&lt;/doi&gt;&lt;/report&gt;</description>
+    </item>
+    <item>
+      <title>The Alan Turing Institute: Carbon emissions from computing</title>
+      <link>https://www.turing.ac.uk/news/technical-reports</link>
+      <pubDate>Sun, 1 Mar 2026 00:00:00 +0000</pubDate>
+      <author>jgeddes@turing.ac.uk (James Geddes)</author>
+      <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.10</guid>
+      <description>&lt;report&gt;&lt;number&gt;10&lt;/number&gt;&lt;title&gt;The Alan Turing Institute: Carbon emissions from computing&lt;/title&gt;&lt;authors&gt;Rosie Wood&lt;/authors&gt;&lt;date&gt;2026-03-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.19237594&lt;/doi&gt;&lt;/report&gt;</description>
     </item>
   </channel>
 </rss>
