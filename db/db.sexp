@@ -155,6 +155,14 @@
  (title    "Empirical evaluation of low-rank adaptation for efficient fine-tuning of large language models")
  (authors  (("Tomas Lazauskas" (orcid "0000-0002-8351-9857"))))
  (date     (2025 07))
- (doi      "10.5281/zenodo.16417805")
+ (doi      "10.5281/zenodo.16811372")
+ ;; (doi      "10.5281/zenodo.16417805")
  (keywords "Large language models" "Low-rank adaptation" "Fine-tuning" "Evaluation"))
 
+(report
+ (number   10)
+ (title    "The Alan Turing Institute: Carbon emissions from computing")
+ (authors  (("Rosie Wood" (orcid "0000-0003-1623-1949"))))
+ (date     (2026 03))
+ (doi      "10.5281/zenodo.19237594")
+ (keywords "High-performance computing" "Greenhouse gas emissions"))
