@@ -159,3 +159,10 @@
  ;; (doi      "10.5281/zenodo.16417805")
  (keywords "Large language models" "Low-rank adaptation" "Fine-tuning" "Evaluation"))
 
+(report
+ (number   10)
+ (title    "The Alan Turing Institute: Carbon emissions from computing")
+ (authors  (("Rosie Wood" (orcid "0000-0003-1623-1949"))))
+ (date     (2026 03))
+ (doi      "10.5281/zenodo.19237594")
+ (keywords "High-performance computing" "Greenhouse gas emissions"))
