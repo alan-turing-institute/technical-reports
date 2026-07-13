@@ -5,8 +5,8 @@
     <title>Turing Technical Reports</title>
     <atom:link rel="self" href="https://alan-turing-institute.github.io/technical-reports/feed.rss" type="application/rss+xml" />
     <link>https://www.turing.ac.uk/news/technical-reports</link>
-    <pubDate>Mon, 13 Jul 2026 16:02:47 +0100</pubDate>
-    <lastBuildDate>Mon, 13 Jul 2026 16:02:47 +0100</lastBuildDate>
+    <pubDate>Mon, 13 Jul 2026 16:11:33 +0100</pubDate>
+    <lastBuildDate>Mon, 13 Jul 2026 16:11:33 +0100</lastBuildDate>
     <generator>Splitflap 1.2 (https://joeldueck.com/what-about/splitflap)</generator>
     <description>Turing Technical Reports</description>
     <language>en</language>
@@ -80,7 +80,7 @@
       <pubDate>Tue, 1 Jul 2025 00:00:00 +0100</pubDate>
       <author>jgeddes@turing.ac.uk (James Geddes)</author>
       <guid isPermaLink="false">tag:turing.ac.uk,2024:technical-reports.9</guid>
-      <description>&lt;report&gt;&lt;number&gt;9&lt;/number&gt;&lt;title&gt;Empirical evaluation of low-rank adaptation for efficient fine-tuning of large language models&lt;/title&gt;&lt;authors&gt;Tomas Lazauskas&lt;/authors&gt;&lt;date&gt;2025-07-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.16811372&lt;/doi&gt;&lt;/report&gt;</description>
+      <description>&lt;report&gt;&lt;number&gt;9&lt;/number&gt;&lt;title&gt;Empirical evaluation of low-rank adaptation for efficient fine-tuning of large language models&lt;/title&gt;&lt;authors&gt;Tomas Lazauskas&lt;/authors&gt;&lt;date&gt;2025-07-01&lt;/date&gt;&lt;doi&gt;10.5281/zenodo.16417805&lt;/doi&gt;&lt;/report&gt;</description>
     </item>
     <item>
       <title>The Alan Turing Institute: Carbon emissions from computing</title>
