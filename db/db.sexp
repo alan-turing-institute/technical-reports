@@ -166,3 +166,14 @@
  (date     (2026 03))
  (doi      "10.5281/zenodo.19237594")
  (keywords "High-performance computing" "Greenhouse gas emissions"))
+
+(report
+ (number   11)
+ (title    "Porting Aurora to Intel accelerated hardware, an experimental and experiential comparison")
+ (authors (("Iain Stenson" (orcid "0000-0001-7848-4154"))
+	   ("Rosie Wood" (orcid "0000-0003-1623-1949"))
+	   ("David Llewellyn-Jones" (orcid "0000-0002-3836-7903"))
+	   ("Tomas Lazauskas" (orcid "0000-0002-8351-9857"))))
+ (date     (2026 07))
+ (doi      "10.5281/zenodo.21157631")
+ (keywords "High-performance computing" "Aurora" "GPUs"))
